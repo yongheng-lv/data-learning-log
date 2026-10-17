@@ -14,6 +14,6 @@ print(f"5 != 7的结果是{num1 != num2}")
 # print("5 == 7的结果是",num1 == num2)
 
 # if语句基本格式
-age = input("请输入你的年龄:")
+age = 20
 if age >= 18:
     print("我已经成年了，即将步入大学生活")
