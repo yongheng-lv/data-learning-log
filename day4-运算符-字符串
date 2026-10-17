@@ -70,5 +70,7 @@ message = "我叫%s, 住在%s, 电话号码是%d, 昨天买了特价橘子花了
 print(message)
 
 # 数字精度控制
-num = 66
-print("%4d" %num)
+num1 = 66
+print("精度限制4,输出: %4d" % num)
+num2 = 13.145
+print("精度限制7.2,输出: %7.2f" % num)
