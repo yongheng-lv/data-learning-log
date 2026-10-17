@@ -58,7 +58,7 @@ print("我叫："+ name , "住在：" + address)
 name = "吕永恒"
 address = "山东省" 
 tel = 314520
-message = "我叫%s,住在%s,电话号码是%s" %(name,address,tel)
+message = "我叫%s, 住在%s, 电话号码是%s" %(name,address,tel)
 print(message)
 # 2.%d:将内容转换成整数，放入占位位置
 #   %f:将内容转换成浮点数，放入占位位置
