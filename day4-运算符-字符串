@@ -73,4 +73,4 @@ print(message)
 num1 = 66
 print("宽度限制4,输出: %4d" % num1)
 num2 = 13.145
-print("宽度限制7,小数精度限制2,输出: %2.2f" % num2)
+print("宽度限制7,小数精度限制2,输出: %6.2f" % num2)
