@@ -23,7 +23,6 @@ num += 1
 print("num =", num)
 
 # 字符串的三种定义方式
-
 # 1.单引号定义字符串
 name = '黑马程序员'
 print(type(name))
@@ -33,6 +32,7 @@ print(type(name))
 # 3.三引号定义字符串
 name = '''黑马程序员'''
 print(type(name)) 
+
 # 字符串引号的嵌套
 # 1.单引号定义的字符串中嵌套双引号
 name = '"黑马程序员"'
