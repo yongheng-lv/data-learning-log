@@ -58,3 +58,4 @@ name = "吕永恒"
 address = "山东省" 
 tel = 314520
 message = "我叫%s,住在%s,电话号码是%s" %(name,address,tel)
+print(message)
