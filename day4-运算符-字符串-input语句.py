@@ -96,3 +96,7 @@ print("字符串在python中的类型名是: %s" % type("字符串"))
 name = input("请告诉我你是谁")
 # print(f"我知道了你是:{name}")
 print("I see,you're %s" %name)
+# 小练
+user_name = input("请输入用户名:")
+user_type = input("请输入数据类型:")
+print(f"您好:{user_name}，您是尊贵的{user_type}用户，欢迎您的光临")
