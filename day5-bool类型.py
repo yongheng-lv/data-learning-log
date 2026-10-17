@@ -10,4 +10,5 @@ print(f"bool_2的数据变量内容是{bool_2},数据类型是{type(bool_2)}")
 num1 = 5
 num2 = 7
 print(f"5 == 7的结果是{num1 == num2}")
-print(f"5 != 7的结果是{num1 != num2}")
+# print(f"5 != 7的结果是{num1 != num2}")
+print("5 == 7的结果是",num1 == num2)
