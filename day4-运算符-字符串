@@ -74,3 +74,10 @@ num1 = 66
 print("宽度限制4,输出: %4d" % num1)
 num2 = 13.145
 print("宽度限制7,小数精度限制2,输出: %7.2f" % num2)
+
+# 字符串格式化2
+# f"{变量},{变量},{变量}"
+name = "深度求索"
+set_up_year = 2023
+stock_price = 99.9
+print(f"{name}成立于{set_up_year},现在的股票价格是{stock_price}")
