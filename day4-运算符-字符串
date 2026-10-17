@@ -68,3 +68,7 @@ tel = 314520
 cash = 1.1
 message = "我叫%s, 住在%s, 电话号码是%d, 昨天买了特价橘子花了%f元" %(name,address,tel,cash)
 print(message)
+
+# 数字精度控制
+num = 13.145
+print("%2d" %num)
