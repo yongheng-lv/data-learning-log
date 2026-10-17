@@ -17,3 +17,8 @@ print(f"5 != 7的结果是{num1 != num2}")
 age = 20
 if age >= 18:
     print("我已经成年了，即将步入大学生活")
+# 小测
+age = input("请输入你的年龄:")
+age_num = int("age")
+if age_num >= 18:
+    print("您已成年,请补票10元")
