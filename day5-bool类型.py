@@ -19,6 +19,6 @@ if age >= 18:
     print("我已经成年了，即将步入大学生活")
 # 小测
 age = input("欢迎来到黑马游乐园,请输入你的年龄:")
-age_num = int(age)
-if age_num >= 18:
+age = int(age)
+if age >= 18:
     print("您已成年,请补票10元")
