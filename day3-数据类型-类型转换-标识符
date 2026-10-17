@@ -28,7 +28,6 @@ print(type(num_str2))
 # 将字符串转换成数字类型
 num_int = int("11")
 print(type(num_int))
-float("13.14")
 num_float = float("13.14")
 print(type(num_float))
 # 错误示范，将含有文字的字符串转换成数字类型（会报错），万物皆可转字符串，字符串仅仅能转换成数字类型的前提是字符串中仅仅包含数字
