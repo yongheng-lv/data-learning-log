@@ -48,4 +48,5 @@ print("学IT来黑马程序员"+"月入过万")
 # 2.字符串字面量和字符串变量的拼接
 name = "吕永恒"
 address = "山东省" 
-print("我叫："+ name , "住在：" + address)
+tel = 314520
+print("我叫："+ name , "住在：" + address , "电话号码是：" + tel)
