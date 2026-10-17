@@ -13,4 +13,4 @@ stock_code = "01102066"
 stock_price_daily_growth_factor = "1.7"
 growth_days= 12
 print(f"公司：{name},股票代码{stock_code},今日股价{stock_price}")
-print("经过 %d天的增长后,股价达到了"stock_price * growth_days ** stock_price_daily_growth_factor"")%(growth_days)
+#print("经过 %d天的增长后,股价达到了"stock_price * growth_days ** stock_price_daily_growth_factor"" %growth_days)
