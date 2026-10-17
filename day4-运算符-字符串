@@ -86,5 +86,6 @@ stock_price = 99.9
 print(f"{name}成立于{set_up_year},现在的股票价格是{stock_price}")
 
 # 对表达式进行格式化
-print("1 + 1的结果是: %d" %(1 + 1))
+print("1 + 1的结果是: %d" % (1 + 1))
 print(f"1 * 2的结果是:{1 * 2}")
+print("字符串在python中的类型名是: %s" % type("字符串"))
