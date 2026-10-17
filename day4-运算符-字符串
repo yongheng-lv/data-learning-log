@@ -71,4 +71,4 @@ print(message)
 
 # 数字精度控制
 num = 13145
-print("%6d" % num)
+print("%3d" %num)
