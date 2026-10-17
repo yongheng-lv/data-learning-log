@@ -94,4 +94,5 @@ print("字符串在python中的类型名是: %s" % type("字符串"))
 # 1.输出括号内的内容并获取键盘输入的数据
 # 2.无论键盘输入什么样类型的数据，获得的数据类型永远是字符串类型
 name = input("请告诉我你是谁")
-print(f"我知道了你是:{name}")
+# print(f"我知道了你是:{name}")
+print("I see,you're %s" %name)
