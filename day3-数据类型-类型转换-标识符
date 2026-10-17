@@ -26,7 +26,6 @@ print(type(num_str), num_str)
 num_str2 = str(13.14)
 print(type(num_str2))
 # 将字符串转换成数字类型
-int("11")
 num_int = int("11")
 print(type(num_int))
 float("13.14")
