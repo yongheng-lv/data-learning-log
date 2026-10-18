@@ -25,7 +25,5 @@ import random
 num = random.randint(1,10)
 if int(input("请输入数字")) > num:
     print("你猜大了，请再猜一次")
-elif int(input("请输入数字：")) < num:
-    print("你猜小了，请再猜一次")
-else:
-    print("正确")
+    if int(input("请输入数字：")) < num:
+        print("你猜小了，请再猜一次")
