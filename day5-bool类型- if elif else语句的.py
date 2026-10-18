@@ -31,7 +31,19 @@ else:
     print("您可以免费游玩")
 # 小测
 high = int(input("请输入您的身高："))
-if high >= 130:
+if high > 130:
     print("您需补票10元")
 else:
     print("您可以免费游玩")
+# if elif else
+vip_level = int(input("请输入VIP等级："))
+high = int(input("请输入身高："))
+day = int(input("请输入今天的日期："))
+if vip_level >3:
+    print("您的VIP级别>3，免费玩")
+elif high < 130:
+    print("您的身高不足130，免费玩")
+elif day == 1:
+    print("今天是1号，免费玩")
+else:
+    print("您不满足免费游玩的条件，请补票")
