@@ -27,5 +27,7 @@ if int(input("请输入数字：")) > num:
     print("你猜大了，请再猜一次")
     if int(input("请输入数字：")) < num:
         print("你猜小了，请再猜一次")
+    elif int(input("请输入数字：")) > num:
+        print("大了，请再猜一次")
         if int(input("请输入数字：")) > num:
             print("你猜大了，很遗憾没有猜对")
