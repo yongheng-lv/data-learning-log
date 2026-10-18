@@ -12,8 +12,7 @@ else:
 
 """
 案例需求：
-看到随机数就想到赵小天
-定义一个数字《1~10，随机产生），通过3次判断来猜出来数字
+定义一个数字（1~10，随机产生），通过3次判断来猜出来数字
 案例要求：
 1.数字随机产生，范围1-10
 2.有3次机会猜测数字，通过3层嵌套判断实现
@@ -22,3 +21,11 @@ else:
 import random
 num = random.randint（1, 10）
 """
+import random
+num = random.randint(1,10)
+if int(input("请输入数字")) > num:
+    print("你猜大了，请再猜一次")
+elif int(input("请输入数字：")) < num:
+    print("你猜小了，请再猜一次")
+else:
+    print("正确")
