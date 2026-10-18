@@ -24,10 +24,22 @@ num = random.randint（1, 10）
 import random
 num = random.randint(1,10)
 if int(input("请输入数字：")) > num:
-    print("你猜大了，请再猜一次")
+    print("大了，继续猜")   
     if int(input("请输入数字：")) < num:
-        print("你猜小了，请再猜一次")
-    elif int(input("请输入数字：")) > num:
-        print("大了，请再猜一次")
+        print("小了，继续猜")
         if int(input("请输入数字：")) > num:
+                   print("大了，请再猜一次")        
+        elif int(input("请输入数字：")) > num:
             print("你猜大了，很遗憾没有猜对")
+    elif int(input("请输入数字")) > num:
+        print("大了，继续猜")
+elif int(input("请输入数字")) < num:
+    print("小，继续猜")
+    # if int(input("请输入数字：")) < num:
+    #     print("小了，继续猜")
+    # elif int(input("请输入数字")) > num:
+    #     print("大了，继续猜")
+        # if int(input("请输入数字：")) > num:
+        #    print("大了，请再猜一次")
+        # elif int(input("请输入数字：")) > num:
+        #     print("你猜大了，很遗憾没有猜对")
