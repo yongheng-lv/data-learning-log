@@ -15,7 +15,7 @@ growth_days= 12
 finally_stock_price = stock_price * stock_price_daily_growth_factor ** growth_days
 print(f"公司:{name},股票代码:{stock_code},今日股价:{stock_price}")
 print("每日增常系数是: %.2f,经过: %d天的增长后,股价达到了; %.2f" %(stock_price_daily_growth_factor,growth_days,finally_stock_price))
-"""总结
+"""总结（运用了day1-day4的知识）
 熟练：定义变量 输出f"{}"型字符串
 需练：输出%占位型字符串
 """
