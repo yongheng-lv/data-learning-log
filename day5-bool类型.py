@@ -29,3 +29,9 @@ if high >= 150:
     print("您需购票")
 else:
     print("您可以免费游玩")
+# 小测
+high = int(input("请输入您的身高："))
+if high >= 130:
+    print("您需补票10元")
+else:
+    print("您可以免费游玩")
