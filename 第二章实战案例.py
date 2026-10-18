@@ -49,19 +49,19 @@ else:
     else:
         print("猜小了")
 
-        guess_num = int(input("请输入你猜的数字："))
+    guess_num = int(input("请输入你猜的数字："))
 
-        if guess_num == num:
+    if guess_num == num:
             print("第二次猜对了")
-        else:
-            if guess_num > num:
+    else:
+        if guess_num > num:
                print("猜大了")
-            else:
+        else:
                 print("猜小了")
 
-                guess_num = int(input("请输入你第三次猜的数字："))
+        guess_num = int(input("请输入你第三次猜的数字："))
 
-                if guess_num == num:
-                    print("最后一次猜对了")
-                else:
-                    print("很遗憾最后一次也没猜对")
+        if guess_num == num:
+            print("最后一次猜对了")
+        else:
+            print("很遗憾最后一次也没猜对")
