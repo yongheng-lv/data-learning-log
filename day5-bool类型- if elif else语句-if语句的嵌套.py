@@ -59,11 +59,26 @@ else:
 # if语句的嵌套
 # 1. 必须是大于等于18岁小于30岁的成年人
 # 2. 同时入职时间需满足大于两年，或者级别大于3才可领取
-if 30 > int(input("请输入年龄：")) >=18:
-    print("年龄合适")
-    if (int(input("请输入入职时间："))) > 2:
-        print("入职时间合适")
-    elif int(input("请输入级别")) > 3:
-            print("入职时间不达标，但是级别达标")
+# if 30 > int(input("请输入年龄：")) >=18:
+#     print("年龄合适")
+#     if (int(input("请输入入职时间："))) > 2:
+#         print("入职时间合适")
+#     elif int(input("请输入级别")) > 3:
+#             print("入职时间不达标，但是级别达标")
+# else:
+#     print("年龄不合适")
+age = 1
+time = 3
+level = 5
+if age >= 18:
+    print("成人符合标准，继续判断")
+    if age < 30:
+        print("年龄符合标准，继续判断")
+        if time >2:
+            print("年龄达标，时间达标，可以领取")
+        elif level > 3:
+            print("年龄达标，时间不达标，但级别达标，可以领取")
+    else:
+        print("年龄太大，无法领取")
 else:
-    print("年龄不合适")
+    print("未成年无法领取")
