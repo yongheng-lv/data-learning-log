@@ -21,7 +21,8 @@ else:
 import random
 num = random.randint（1, 10）
 """
-import random
+
+"""import random
 num = random.randint(1,10)
 if int(input("请输入数字：")) > num:
     print("大了，继续猜")   
@@ -35,11 +36,32 @@ if int(input("请输入数字：")) > num:
         print("大了，继续猜")
 elif int(input("请输入数字")) < num:
     print("小，继续猜")
-    # if int(input("请输入数字：")) < num:
-    #     print("小了，继续猜")
-    # elif int(input("请输入数字")) > num:
-    #     print("大了，继续猜")
-        # if int(input("请输入数字：")) > num:
-        #    print("大了，请再猜一次")
-        # elif int(input("请输入数字：")) > num:
-        #     print("你猜大了，很遗憾没有猜对")
+    """
+import random
+num = random.randint(1,10)
+guess_num = int(input("请输入你猜的数字："))
+
+if guess_num == num:
+    print("一次就对")
+else:
+    if guess_num > num:
+        print("猜大了")
+    else:
+        print("猜小了")
+
+        guess_num = int(input("请输入你猜的数字："))
+
+        if guess_num == num:
+            print("第二次猜对了")
+        else:
+            if guess_num > num:
+               print("猜大了")
+            else:
+                print("猜小了")
+
+                guess_num = int(input("请输入你第三次猜的数字："))
+
+                if guess_num == num:
+                    print("最后一次猜对了")
+                else:
+                    print("很遗憾最后一次也没猜对")
