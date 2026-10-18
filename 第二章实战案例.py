@@ -23,7 +23,15 @@ num = random.randint（1, 10）
 """
 import random
 num = random.randint(1,10)
-if int(input("请输入数字")) > num:
+if int(input("请输入数字：")) > num:
     print("你猜大了，请再猜一次")
     if int(input("请输入数字：")) < num:
         print("你猜小了，请再猜一次")
+        if int(input("请输入数字：")) > num:
+            print("你猜大了，很遗憾没有猜对")
+        else:
+            print("恭喜猜对了")
+    else:
+        print("恭喜猜对了")
+else:
+    print("恭喜猜对了")
