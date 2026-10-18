@@ -29,9 +29,9 @@ if int(input("请输入数字：")) > num:
         print("你猜小了，请再猜一次")
         if int(input("请输入数字：")) > num:
             print("你猜大了，很遗憾没有猜对")
-        else:
-            print("恭喜猜对了")
-    else:
-        print("恭喜猜对了")
-else:
-    print("恭喜猜对了")
+        elif int(input("请输入数字")) < num:
+            print(f"小了，我的真实数字是{num}")
+    elif int(input("请输入数字")) > num:
+        print("大了，再猜")
+elif int(input("请输入数字"))< num:
+    print("小了，再猜")
