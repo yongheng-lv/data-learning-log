@@ -1,4 +1,4 @@
-"""布尔数据类型-if基础
+"""布尔数据类型-if else基础
 """
 
 # 定义数据变量存储布尔数据
@@ -23,3 +23,9 @@ age = int(age)
 if age >= 18:
     print("您已成年,请补票10元")
     print("祝您游玩愉快")
+# if else
+high = 170
+if high >= 150:
+    print("您需购票")
+else:
+    print("您可以免费游玩")
