@@ -77,5 +77,8 @@ itheima is a brand of itcast中共含有：4个字母a
 # for i in range(10):
 #     print(i)
 # range语法2 range(num1,num2)
-for i in range(5,10):
+# for i in range(5,10):
+#     print(i)
+# range语法3 range(num1,num2,num3)
+for i in range(1,11,3):
     print(i)
