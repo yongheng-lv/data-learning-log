@@ -108,7 +108,7 @@ import random
 num = random.randint(1,10)
 total_wage = 10000
 for i in range(1,21):
-    if num >= 5:
-        print(f"经判断，{i}号员工绩效分为{num} >= 5,发放1000元工资")
-    else:
-        print(f"经判断，{i}号员工绩效分为{num} <= 5,不发工资")
+    while num >= 5:
+        print(f"你的绩效为{num},发1000元")
+    while num < 5:
+        continue
