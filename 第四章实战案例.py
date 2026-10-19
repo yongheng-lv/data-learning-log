@@ -85,9 +85,9 @@ lvyongheng is a good boy中共含有：4个字母o
 # print(f"从1到1315共有{count}个偶数")
 
 """
-通过fOr循环，输出如下九九乘法表内容
+通过for循环，输出如下九九乘法表内容
 """
 for i in range(1,10):
-    for j in range(1,10):
+    for j in range(1,i + 1):
         print(f"{i} * {j} = {j * i}\t",end='')
     print()
