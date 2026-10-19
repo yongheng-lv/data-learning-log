@@ -67,6 +67,8 @@ itheima is a brand of itcast中共含有：4个字母a
 """
 
 name = "lvyongheng is a good boy"
-for sum in name:
-    if sum == "o":
+sum = 0
+for x in name:
+    if x == "o":
         sum += 1
+print(f"这串代码共有{sum}个o")
