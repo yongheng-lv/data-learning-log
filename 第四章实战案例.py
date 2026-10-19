@@ -110,11 +110,11 @@ for i in range(1,21):
     import random
     num = random.randint(1,10)
     if num < 5:
-        print(f"你的绩效分不合格，不发工资")
+        print(f"你是第{i}号，绩效分为{num}，不合格，不发工资")
         continue
     if total_wage >= 1000:
         total_wage -= 1000
-        print(f"余额为{total_wage}，发工资")
+        print(f"你是第{i}号，绩效为{num}分，公司余额为{total_wage}，发工资")
     else:
         print("工资余额不足")
-        brake
+        break
