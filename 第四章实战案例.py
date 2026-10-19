@@ -44,10 +44,3 @@ print(f"你一共猜了{count}次")
 """
 输出九九乘法表
 """
-i = 1
-j = 1
-while i <= 9:
-    print("")
-    while j <= 1:
-        print(j * i)
-    i += 1
