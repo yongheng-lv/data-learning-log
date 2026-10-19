@@ -26,10 +26,12 @@ num= random
 """
 import random
 num = random.randint(1,100)
+count = 0
 flag = True
 while flag:
     guess_num = int(input("请输入你猜的数字："))
     if guess_num == num:
+        count += 1
         print("猜中了")
         flag = False
     else:
@@ -37,3 +39,4 @@ while flag:
             print("猜大了，再猜一次：")
         else:
             print("猜小了，再猜一次：")
+print(f"你一共猜了{count}次")
