@@ -1,0 +1,9 @@
+"""
+while循环
+"""
+
+# 基础语法
+i = 0
+while i < 100:
+    print("python")
+    i += 1
