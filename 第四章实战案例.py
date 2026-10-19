@@ -108,7 +108,7 @@ import random
 num = random.randint(1,10)
 total_wage = 10000
 for i in range(1,21):
-    while num >= 5:
-        print(f"你的绩效为{num},发1000元")
-    while num < 5:
+    if num >= 5:
+        print(f"你是第{i}号，你的绩效为{num},发1000元")
+    if num < 5:
         continue
