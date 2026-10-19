@@ -74,5 +74,8 @@ itheima is a brand of itcast中共含有：4个字母a
 # print(f"这串代码共有{sum}个o")
 
 # range语法1 range(num)
-for i in range (10):
+# for i in range(10):
+#     print(i)
+# range语法2 range(num1,num2)
+for i in range(5,10):
     print(i)
