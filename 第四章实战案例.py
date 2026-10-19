@@ -57,10 +57,10 @@ num= random
 #     print() # 空内容，输出换行
 
 """
-练习案例：数一数有几个a
-定义字符串变量name，内容为："itheima is a brand of itcast"
-通过for循环，遍历此字符串，统计有多少个英文字母："a"
-itheima is a brand of itcast中共含有：4个字母a
+练习案例：数一数有几个o
+定义字符串变量name，内容为："lvyongheng is a good boy"
+通过for循环，遍历此字符串，统计有多少个英文字母："o"
+lvyongheng is a good boy中共含有：4个字母o
 提示：
 1. 计数可以在循环外定义一个整数类型变量用来做累加计数
 2. 判断是否为字母"a”，可以通过if语句结合比较运算符来完成
@@ -77,9 +77,17 @@ itheima is a brand of itcast中共含有：4个字母a
 并使用range（）语句，获取从1到num的序列，使用for循环遍历它。
 在遍历的过程中，统计有多少偶数出现
 """
-num = 1314
-count = 0
-for i in range(1315):
-    if i % 2 == 0:
-        count += 1
-print(f"从1到1315共有{count}个偶数")
+# num = 1314
+# count = 0
+# for i in range(1315):
+#     if i % 2 == 0:
+#         count += 1
+# print(f"从1到1315共有{count}个偶数")
+
+"""
+通过fOr循环，输出如下九九乘法表内容
+"""
+for i in range(1,10):
+    for j in range(1,10):
+        print(f"{i} * {j} = {j * i}\t",end='')
+    print()
