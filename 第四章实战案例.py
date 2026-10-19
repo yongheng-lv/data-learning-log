@@ -114,7 +114,7 @@ for i in range(1,21):
         continue
     if total_wage >= 1000:
         total_wage -= 1000
-        print(f"你是第{i}号，绩效为{num}分，公司余额为{total_wage}，发工资")
+        print(f"你是第{i}号，绩效为{num}分，发工资")
     else:
-        print("工资余额不足")
+        print(f"工资余额为{total_wage}，余额不足，不再发放")
         break
