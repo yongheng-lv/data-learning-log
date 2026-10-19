@@ -66,7 +66,7 @@ while循环及嵌套、for循环及嵌套、range语句
 
 for i in range(1,101):
     print(f"今天是表白的第{i}天")
-    j = 0
+    j = 1
     while j <= 10:
         print(f"送给小美的第{j}只玫瑰花(表白的第{i}天，坚持)")
         j += 1
