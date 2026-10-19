@@ -30,8 +30,8 @@ count = 0
 flag = True
 while flag:
     guess_num = int(input("请输入你猜的数字："))
+    count += 1
     if guess_num == num:
-        count += 1
         print("猜中了")
         flag = False
     else:
