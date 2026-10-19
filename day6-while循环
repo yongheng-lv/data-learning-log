@@ -50,8 +50,8 @@ while循环
 坚持表白100天
 每天送花10束
 """
-for i in range(101):
+for i in range(1,101):
     print(f"今天是表白的第{i}天")
-    for j in range(10):
+    for j in range(1,11):
         print(f"这是我送的第{j}朵玫瑰花")
 print(f"第{i}天表白成功")
