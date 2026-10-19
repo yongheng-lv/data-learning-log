@@ -30,7 +30,7 @@ flag = True
 while flag:
     guess_num = int(input("请输入你猜的数字："))
     if guess_num == num:
-        print("恭喜一次猜中")
+        print("猜中了")
         flag = False
     else:
         if guess_num > num:
