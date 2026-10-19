@@ -66,9 +66,13 @@ itheima is a brand of itcast中共含有：4个字母a
 2. 判断是否为字母"a”，可以通过if语句结合比较运算符来完成
 """
 
-name = "lvyongheng is a good boy"
-sum = 0
-for x in name:
-    if x == "o":
-        sum += 1
-print(f"这串代码共有{sum}个o")
+# name = "lvyongheng is a good boy"
+# sum = 0
+# for x in name:
+#     if x == "o":
+#         sum += 1
+# print(f"这串代码共有{sum}个o")
+
+# range语法1 range(num)
+for i in range (10):
+    print(i)
