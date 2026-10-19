@@ -109,11 +109,12 @@ total_wage = 10000
 for i in range(1,21):
     import random
     num = random.randint(1,10)
-    if num >= 5:
-        print(f"第{i}号发1000元工资")
-        print(f"还剩{total_wage}")
-        if total_wage < 1000:
-            print(f"剩余工资仅为{total_wage}元，不再发放")
-            total_wage -= 1000
+    if num < 5:
+        print(f"你的绩效分不合格，不发工资")
+        continue
+    if total_wage >= 1000:
+        total_wage -= 1000
+        print(f"余额为{total_wage}，发工资")
     else:
-        print(f"第{i}号绩效不合格，不发工资")
+        print("工资余额不足")
+        brake
