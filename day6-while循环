@@ -1,5 +1,5 @@
 """
-while循环及嵌套、for循环及嵌套、range语句
+while循环及嵌套、for循环及嵌套、range语句、continue和brake
 """
 
 # 基础语法
@@ -64,10 +64,18 @@ while循环及嵌套、for循环及嵌套、range语句
 #     print(f"小美我喜欢你,(第{i}天表白结束)")
 # print(f"第{i}天表白成功")
 
-for i in range(1,101):
-    print(f"今天是表白的第{i}天")
-    j = 1
-    while j <= 10:
-        print(f"送给小美的第{j}只玫瑰花(表白的第{i}天，坚持)")
-        j += 1
-print(f"表白的第{i}天，表白成功")
+# for i in range(1,101):
+#     print(f"今天是表白的第{i}天")
+#     j = 1
+#     while j <= 10:
+#         print(f"送给小美的第{j}只玫瑰花(表白的第{i}天，坚持)")
+#         j += 1
+# print(f"表白的第{i}天，表白成功")
+
+# continue和brake
+for i in range(1,6):
+    for i in range(1,4):
+        print("2")
+        continue
+        print("3")
+    print("1")
