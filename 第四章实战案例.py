@@ -104,12 +104,15 @@ lvyongheng is a good boy中共含有：4个字母o
  import random
 num = random.randint（1, 10）
 """
-import random
-num = random.randint(1,10)
+
 total_wage = 10000
 for i in range(1,21):
+    import random
+    num = random.randint(1,10)
     if num >= 5:
         print(f"第{i}号发1000元工资")
+        print(f"还剩{total_wage}")
+        total_wage -= 1000
         continue
     else:
-        print("绩效不合格，不发工资")
+        print(f"第{i}号绩效不合格，不发工资")
