@@ -5,12 +5,13 @@
 设置为确保while循环100次
 确保累加的数字，从1开始，到100结束
 """
-i = 1
-sum = 0
-while i <= 100:
-    sum += i
-    i += 1
-print(f"1到100的和是{sum}")
+
+# i = 1
+# sum = 0
+# while i <= 100:
+#     sum += i
+#     i += 1
+# print(f"1到100的和是{sum}")
 
 """
 设置一个范围1-100的随机整数变量，通过while循环，配合input语句，判断输入的数字是否等于随机数
@@ -24,31 +25,48 @@ print(f"1到100的和是{sum}")
 • 随机数可以使用：import random
 num= random
 """
-import random
-num = random.randint(1,100)
-count = 0
-flag = True
-while flag:
-    guess_num = int(input("请输入你猜的数字："))
-    count += 1
-    if guess_num == num:
-        print("猜中了")
-        flag = False
-    else:
-        if guess_num > num:
-            print("猜大了，再猜一次：")
-        else:
-            print("猜小了，再猜一次：")
-print(f"你一共猜了{count}次")
+
+# import random
+# num = random.randint(1,100)
+# count = 0
+# flag = True
+# while flag:
+#     guess_num = int(input("请输入你猜的数字："))
+#     count += 1
+#     if guess_num == num:
+#         print("猜中了")
+#         flag = False
+#     else:
+#         if guess_num > num:
+#             print("猜大了，再猜一次：")
+#         else:
+#             print("猜小了，再猜一次：")
+# print(f"你一共猜了{count}次")
 
 """
 输出九九乘法表
 """
-i = 1
-while i <= 9:
-    j = 1
-    while j <= i:
-        print(f"{j}*{i} = {j * i}\t",end='')
-        j += 1
-    i += 1
-    print()
+
+# i = 1
+# while i <= 9:
+#     j = 1
+#     while j <= i:
+#         print(f"{j}*{i} = {j * i}\t",end='')
+#         j += 1
+#     i += 1
+#     print() # 空内容，输出换行
+
+"""
+练习案例：数一数有几个a
+定义字符串变量name，内容为："itheima is a brand of itcast"
+通过for循环，遍历此字符串，统计有多少个英文字母："a"
+itheima is a brand of itcast中共含有：4个字母a
+提示：
+1. 计数可以在循环外定义一个整数类型变量用来做累加计数
+2. 判断是否为字母"a”，可以通过if语句结合比较运算符来完成
+"""
+
+name = "lvyongheng is a good boy"
+for sum in name:
+    if sum == "o":
+        sum += 1
