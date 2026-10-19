@@ -112,3 +112,4 @@ for i in range(1,21):
         print(f"你是第{i}号，你的绩效为{num},发1000元")
     if num < 5:
         continue
+print("结束")
