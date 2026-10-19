@@ -112,7 +112,6 @@ for i in range(1,21):
     if num >= 5:
         print(f"第{i}号发1000元工资")
         print(f"还剩{total_wage}")
-        if total_wage == 0:
-            total_wage -= 1000
+        total_wage -= 1000
     else:
         print(f"第{i}号绩效不合格，不发工资")
