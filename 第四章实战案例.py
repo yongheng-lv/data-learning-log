@@ -25,7 +25,7 @@ print(f"1到100的和是{sum}")
 num= random
 """
 import random
-num= random
+num = random.randint(1,100)
 flag = True
 while flag:
     guess_num = int(input("请输入你猜的数字："))
