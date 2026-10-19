@@ -1,5 +1,5 @@
 """
-while循环
+while循环及嵌套、for循环及嵌套、range语句
 """
 
 # 基础语法
@@ -46,10 +46,10 @@ while循环
 #     print(i)
 
 # for循环的变量作用域
-i = 0
-for i in range(1,10):
-    print(i)
-print(i)
+# i = 0
+# for i in range(1,10):
+#     print(i)
+# print(i) # 打印最后一次循环的i的值
 
 # for循环的嵌套
 """
@@ -63,3 +63,11 @@ print(i)
 #         print(f"这是我送的第{j}朵玫瑰花")
 #     print(f"小美我喜欢你,(第{i}天表白结束)")
 # print(f"第{i}天表白成功")
+
+for i in range(1,101):
+    print(f"今天是表白的第{i}天")
+    j = 0
+    while j <= 10:
+        print(f"送给小美的第{j}只玫瑰花(表白的第{i}天，坚持)")
+        j += 1
+print(f"表白的第{i}天，表白成功")
