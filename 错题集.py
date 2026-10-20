@@ -55,7 +55,7 @@ while True:
         print("大了，继续猜：")
     elif guess_num < num:
         print("小了，继续猜：")
-        # continue
+        continue
     else:
         print(f"恭喜，第{count}次猜中了{num}")
         break
