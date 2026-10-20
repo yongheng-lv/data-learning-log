@@ -47,15 +47,15 @@ num= random.randint(1,100)
 """
 import random
 num = random.randint(1,100)
-flag = True
 count = 0
-while flag:
-    count += 1
+while True:
     guess_num = int(input("请输入你猜的数字："))
+    count += 1
     if guess_num > num:
         print("大了，继续猜：")
     elif guess_num < num:
         print("小了，继续猜：")
-        continue
+        # continue
     else:
         print(f"恭喜，第{count}次猜中了{num}")
+        break
