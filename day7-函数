@@ -32,7 +32,9 @@
 # None与if语句的搭配
 def age_1(age):
     if age >= 18:
-        return None
+        return "success"
     else:
-        print("未成年不允许进入")
+        return None
 result = age_1(16)
+if result == None:
+    print("未成年禁止进入")
