@@ -35,3 +35,4 @@ def age_1(age):
         return None
     else:
         print("未成年不允许进入")
+result = age_1(16)
