@@ -26,5 +26,5 @@
 # 返回值None
 def say_hi():
     print("你好")
-return = say_hi()
-print(f"无返回值时返回的内容是{return},类型是{type(return)}") 
+result = say_hi()
+print(f"无返回值时返回的内容是{result},类型是{type(result)}") 
