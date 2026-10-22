@@ -6,12 +6,19 @@
 # def 函数名(传入参数（可省略）):
 #         函数体
 #         return 返回值
-def say_hi():
-    print("hi,im lv and 19 years oid")
-say_hi()
+# def say_hi():
+#     print("hi,im lv and 19 years oid")
+# say_hi()
 
 # 使用传入参数
-def add(x,y,z):
-    sum = x + y + z
-    print(f"{x} + {y} + {z}= {sum}")
-add(3,4,6)
+# def add(x,y,z):
+#     sum = x + y + z
+#     print(f"{x} + {y} + {z}= {sum}")
+# add(3,4,6)
+
+# 返回值 return
+def add(x,y):
+    sum = x + y
+    return sum
+r = add(5,6)
+print(r)
