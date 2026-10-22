@@ -8,4 +8,4 @@
 #         return 返回值
 def say_hi():
     print("hi,im lv and 19 years oid")
-    say_hi:
+say_hi()
