@@ -9,3 +9,9 @@
 def say_hi():
     print("hi,im lv and 19 years oid")
 say_hi()
+
+# 使用传入参数
+def add(x,y):
+    sum = x + y
+    print(f"{x} + {y}的和是{sum}")
+add(3,4)
