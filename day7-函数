@@ -30,11 +30,11 @@
 # print(f"无返回值时返回的内容是{result},类型是{type(result)}") 
 
 # None与if语句的搭配
-def age_1(age):
-    if age >= 18:
-        return "success"
-    else:
-        return None
-result = age_1(16)
-if result == None:
-    print("未成年禁止进入")
+# def age_1(age):
+#     if age >= 18:
+#         return "success"
+#     else:
+#         return None
+# result = age_1(16)
+# if result == None:
+#     print("未成年禁止进入")
