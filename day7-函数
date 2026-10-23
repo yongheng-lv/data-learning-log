@@ -67,3 +67,4 @@ def func_2():
     print("---2---")
     func_1()
     print("---3---")
+func_2()
