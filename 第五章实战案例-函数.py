@@ -75,10 +75,12 @@ while True:
         check_balance(True)
         continue
     elif sel == "2":
-        saving(True)
+        num = int(input("请输入要存多少钱："))
+        saving(num)
         continue
     elif sel == "3":
-        withdraw(True)
+        num = int(input("请输入要去多少钱："))
+        withdraw(num)
         continue
     else:
         print("程序已退出")
