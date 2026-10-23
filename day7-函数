@@ -50,5 +50,5 @@
 # return 返回值
 def add(x,y):
     result = x + y
-    print(f"两数的和是{add}")
-add(x,y)
+    print(f"两数的和是{result}")
+    return result
