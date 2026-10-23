@@ -38,3 +38,17 @@
 # result = age_1(16)
 # if result == None:
 #     print("未成年禁止进入")
+
+# 函数说明文档
+# def func （x, y）：
+# 函数说明
+# ：param x：
+# 形参X的说明
+# ：param y：形参y的说明
+# ：return：返回值的说明
+# 函数体
+# return 返回值
+def add(x,y):
+    result = x + y
+    print(f"两数的和是{add}")
+add(x,y)
