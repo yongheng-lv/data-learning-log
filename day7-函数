@@ -71,16 +71,17 @@ def add(x,y):
 
 # 变量在函数中的作用域
 # 局部变量
-def test_a():
-    num = 2
-    print(num)
-# print(num) 除了变量函数，变量体失效
-test_a()
+# def test_a():
+#     num = 2
+#     print(num)
+# # print(num) 除了变量函数，变量体失效
+# test_a()
 # 全局变量
 num = 100
-def test():
+def test_a():
     print(f"test_a = {num}")
 def test_b():
     print(f"test_b = {num}")
 test_a()
 test_b()
+print(num)
