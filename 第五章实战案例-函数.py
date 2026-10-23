@@ -68,6 +68,7 @@ def menu():
     print("存款\t【输入2】")
     print("取款\t【输入3】")
     print("推出\t【输入4】")
+# 设置无限循环，确保程序不退出
 while True:
     menu()
     sel = input("请输入您的选择：")
