@@ -56,7 +56,7 @@ def saving(num):
 # 定义取款函数
 def withdraw(num):
     global money
-    monet -= num
+    money -= num
     print("----------取款----------")
     print(f"{name}，您好，您取款{money}元成功")
     check_balance(False)
@@ -79,7 +79,7 @@ while True:
         saving(num)
         continue
     elif sel == "3":
-        num = int(input("请输入要去多少钱："))
+        num = int(input("请输入要取多少钱："))
         withdraw(num)
         continue
     else:
