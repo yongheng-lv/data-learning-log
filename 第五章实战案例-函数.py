@@ -39,7 +39,8 @@
 money = 5000000
 name = input("请输入姓名：")
 def main_menu():
-    print("主菜单“\f”欢迎来到永亨银行ATM，请选择操作：",end = '')
+    print("-----------主菜单-----------")
+    print("欢迎来到永亨银行ATM，请选择操作：")
 def cash_balance():
     print(f"您的银行帐户余额为{money}")
 def cash_deposit():
