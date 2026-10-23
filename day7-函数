@@ -55,7 +55,15 @@ def add(x,y):
     :param x:形参y表示相加的另一个数
     :return:返回值是两数相加的结果
     """
-    result = x + y
-    print(f"两数的和是{result}")
-    return result
-add(1,2)
+#     result = x + y
+#     print(f"两数的和是{result}")
+#     return result
+# add(1,2)
+
+# 函数的嵌套
+def func_1():
+    print("---1---")
+def func_2():
+    print("---2---")
+    func_1()
+    print("---3---")
