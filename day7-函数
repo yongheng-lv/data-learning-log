@@ -61,10 +61,16 @@ def add(x,y):
 # add(1,2)
 
 # 函数的嵌套
-def func_1():
-    print("---1---")
-def func_2():
-    print("---2---")
-    func_1()
-    print("---3---")
-func_2()
+# def func_a():
+#     print("---1---")
+# def func_b():
+#     print("---2---")
+#     func_z()
+#     print("---3---")
+# func_b()
+
+# 变量在函数中的作用域
+def test_a():
+    num = 2
+    print(num)
+print(num)
