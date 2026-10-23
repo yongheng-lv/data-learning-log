@@ -49,10 +49,40 @@ def check_balance(show_tatol):
 def saving(num):
     global money # money在函数内定义为全局变量
     money += num
-    print("-----------存款-----------")
+    print("----------存款----------")
     print(f"{name}，您好，您存款{num}元成功")
 # 调用check_balance函数查询余额
-    check_balance
+    check_balance(False)
+# 定义取款函数
+def withdraw(num):
+    global money
+    monet -= num
+    print("----------取款----------")
+    print(f"{name}，您好，您取款{money}元成功")
+    check_balance(False)
+# 定义主菜单函数
+def menu():
+    print("----------主菜单----------")
+    print(f"{name}，您好，欢迎来到永亨银行ATM，请选择操作")
+    print("查询余额【输入1】")
+    print("存款\t【输入2】")
+    print("取款\t【输入3】")
+    print("推出\t【输入4】")
+    while True:
+        menu()
+        sel = input("请输入您的选择：")
+        if sel == 1:
+            check_balance()
+            continue
+        elif sel == 2:
+            saving()
+            continue
+        elif sel == 3:
+            withdraw()
+            continue
+        else:
+            print("程序已退出")
+            break
 
 
 
