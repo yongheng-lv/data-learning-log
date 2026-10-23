@@ -69,20 +69,20 @@ def menu():
     print("取款\t【输入3】")
     print("推出\t【输入4】")
 while True:
-        menu()
-        sel = input("请输入您的选择：")
-        if sel == "1":
-            check_balance()
-            continue
-        elif sel == "2":
-            saving()
-            continue
-        elif sel == "3":
-            withdraw()
-            continue
-        else:
-            print("程序已退出")
-            break
+    menu()
+    sel = input("请输入您的选择：")
+    if sel == "1":
+        check_balance(True)
+        continue
+    elif sel == "2":
+        saving(True)
+        continue
+    elif sel == "3":
+        withdraw(True)
+        continue
+    else:
+        print("程序已退出")
+        break
 
 
 
