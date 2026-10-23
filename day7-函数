@@ -49,6 +49,12 @@
 # 函数体
 # return 返回值
 def add(x,y):
+    """
+    add可以接收两个参数，进行两数相加
+    :param x: 形参x表示相加的一个数
+    :param x:形参y表示相加的另一个数
+    :return:返回值是两数相加的结果
+    """
     result = x + y
     print(f"两数的和是{result}")
     return result
