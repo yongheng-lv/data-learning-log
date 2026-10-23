@@ -86,10 +86,10 @@ def add(x,y):
 # test_b()
 # print(num)
 # 在函数内修改全局变量（在函数内用global）
-num = 100
-def test_a():
-    global num
-    num = 500
-    print(num)
-test_a()
-print(num)
+# num = 100
+# def test_a():
+#     global num # 修改全局变量
+#     num = 500
+#     print(num)
+# test_a()
+# print(num)
