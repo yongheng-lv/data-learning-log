@@ -38,6 +38,24 @@
 """
 money = 5000000
 name = input("请输入姓名：")
+def check_balance():
+    print(f"{name},您好，您的余额为{money}元")
+def cash_deposit():
+    cash1 = int(input("请输入存款金额："))
+    print(f"{name}您好，存款{cash1}成功\n当前账户余额为{money + cash1}")
+def cash_withdraw():
+    cash2 = int(input("请输入取款金额："))
+    print(f"{name}您好，取款{cash2}成功\n当前账户余额为{money + cash2}")
 def main_menu():
-    print(f"{name},您好，欢迎来到永亨银行ATM，请选择操作：\n查询余额【输入1】\n存款【输入2】\n取款【输入3】\n推出【输入4】\n请输入您的选择：")
+    print(f"{name},您好，欢迎来到永亨银行ATM，请选择操作：\n查询余额【输入1】\n存款【输入2】\n取款【输入3】\n退出【输入4】")
+    sel = int(input("请输入您的选择："))
+    print(sel)
+    while sel == 1:
+        check_balance()
+    while sel == 2:
+        cash_deposit()
+    while sel == 3:
+        cash_withdraw()
+    while sel == 4:
+        break
 main_menu()
