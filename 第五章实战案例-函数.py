@@ -38,10 +38,16 @@
 """
 money = 5000000
 name = input("请输入姓名：")
+def main_menu():
+    print("主菜单“\f”欢迎来到永亨银行ATM，请选择操作：",end = '')
 def cash_balance():
     print(f"您的银行帐户余额为{money}")
 def cash_deposit():
-    cash = int(input("请输入你要存钱的数目："))
-    print(f"当前账户剩余余额为{money + cash}")
+    cash1 = int(input("请输入你要存钱的数目："))
+    print(f"当前账户剩余余额为{money + cash1}元")
+def cash_withdraw():
+    cash2 = int(input("请输入你要取的数目："))
+    print(f"当前账户余额为{money - cash2}元")
+main_menu()
 cash_balance()
 cash_deposit()
