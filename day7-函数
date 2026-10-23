@@ -77,11 +77,18 @@ def add(x,y):
 # # print(num) 除了变量函数，变量体失效
 # test_a()
 # 全局变量
+# num = 100
+# def test_a():
+#     print(f"test_a = {num}")
+# def test_b():
+#     print(f"test_b = {num}")
+# test_a()
+# test_b()
+# print(num)
+# 在函数内修改全局变量（在函数内用global）
 num = 100
 def test_a():
-    print(f"test_a = {num}")
-def test_b():
-    print(f"test_b = {num}")
-test_a()
-test_b()
+    global num
+    num = 500
+    print(num)
 print(num)
