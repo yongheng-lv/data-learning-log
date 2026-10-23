@@ -58,3 +58,4 @@ def add(x,y):
     result = x + y
     print(f"两数的和是{result}")
     return result
+add(1,2)
