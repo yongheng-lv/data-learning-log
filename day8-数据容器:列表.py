@@ -5,3 +5,7 @@
 
 name_list = [ "lv", "yong", "heng"]
 print(name_list)
+print(type(name_list))
+# 嵌套列表
+my_list = [[ 1, 2, 3],[ 4, 5, 6]]
+print()
