@@ -33,11 +33,17 @@
 • 通过if判断来确认偶数
 • 通过列表的append方法，来增加元素
 """
-list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# list2 = []
+# index = 1
+# while index <= len(list1):
+#     if index % 2 == 0:
+#         list2.append(index)
+#         print(f"{list2}")
+#     index += 1
+list1 = [1, 2, 3, 4 ,5 ,6 ,7 ,8, 9, 10]
 list2 = []
-index = 1
-while index <= len(list1):
-    if index % 2 == 0:
-        list2.append(index)
+for element in list1:
+    if element % 2 == 0:
+        list2.append(element)
         print(f"{list2}")
-    index += 1
