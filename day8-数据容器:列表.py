@@ -58,9 +58,13 @@ len（列表）
 """
 
 # 列表的循环遍历
-index = 0
+# index = 0
+# mylist = [1, 2, 3, 4, 5]
+# while index < len(mylist): # while循环遍历
+#     element = mylist[index]
+#     print(f"{element}")
+#     index += 1
+
 mylist = [1, 2, 3, 4, 5]
-while index < len(mylist):
-    element = mylist[index]
+for element in mylist:
     print(f"{element}")
-    index += 1
