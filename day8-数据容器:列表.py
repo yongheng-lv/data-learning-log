@@ -12,5 +12,9 @@
 # print(type(my_list))
 
 # 列表的下表索引 从左向右依次从0开始加，从右向左依次从-1开始减
-name_list = [ "lv", "yong", "heng"]
-print(name_list[0])
+# name_list = [ "lv", "yong", "heng"]
+# print(name_list[0])
+# 列表的嵌套索引
+name_list = [[ "lv", "yong", "heng"],[ 1, 2, 3]]
+print(name_list[0][1])
+print(name_list[1][-1])
