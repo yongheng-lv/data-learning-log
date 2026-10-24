@@ -14,11 +14,30 @@
 6
 查找元素31，在列表中的下标位置
 """
-stu_age = [ 21, 25, 21, 23, 22, 20]
-stu_age.append(31)
-new_list = [ 29, 33, 30]
-stu_age.extend(new_list)
-num1 = stu_age[0]
-num2 = stu_age[-1]
-num3 = stu_age.index(31)
-print(f"{stu_age}\n{num1}\n{num2}\n{num3}")
+# stu_age = [ 21, 25, 21, 23, 22, 20]
+# stu_age.append(31)
+# new_list = [ 29, 33, 30]
+# stu_age.extend(new_list)
+# num1 = stu_age[0]
+# num2 = stu_age[-1]
+# num3 = stu_age.index(31)
+# print(f"{stu_age}\n{num1}\n{num2}\n{num3}")
+
+"""
+定义一个列表，内容是：［1, 2, 3, 4, 5, 6, 7, 8, 9, 10］
+• 遍历列表，取出列表内的偶数，并存入一个新的列表对象中
+• 使用while循环和for循环各操作一次
+通过while循环，从列表：［1，2，3，4，5，6，7，8，9，10］中取出偶数，组成新列表：［2，4，6，8，10］
+通过for循环，从列表：[1，2，3，4，5，6，7，8，9，10］中取出偶数，组成新列表：【2，4,6，8,10］
+提示：
+• 通过if判断来确认偶数
+• 通过列表的append方法，来增加元素
+"""
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = []
+index = 1
+while index <= len(list1):
+    if index % 2 == 0:
+        list2.append(index)
+        print(f"{list2}")
+    index += 1
