@@ -46,4 +46,4 @@ list2 = []
 for element in list1:
     if element % 2 == 0:
         list2.append(element)
-        print(f"{list2}")
+print(f"{list2}")
