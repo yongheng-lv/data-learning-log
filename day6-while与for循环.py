@@ -72,7 +72,7 @@ while循环及嵌套、for循环及嵌套、range语句、continue和brake
 #         j += 1
 # print(f"表白的第{i}天，表白成功")
 
-# continue和brake
+# continue和break
 # for i in range(1,6):
 #     print("1")
 #     for i in range(1,4):
@@ -85,6 +85,6 @@ while循环及嵌套、for循环及嵌套、range语句、continue和brake
 #     print("1")
 #     for i in range(1,4):
 #         print("2")
-#         brake # 结束所在循环的执行
+#         break # 结束所在循环的执行
 #         print("3")
 #     print("4")
