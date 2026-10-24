@@ -17,8 +17,8 @@
 stu_age = [ 21, 25, 21, 23, 22, 20]
 stu_age.append(31)
 new_list = [ 29, 33, 30]
-stu_age2 = stu_age.extend(new_list)
-num1 = stu_age2.pop(0)
-num2 = stu_age2.pop(8)
-num3 = stu_age2.index(31)
-print(f"{stu_age}\n{stu_age2}\n{num1}\n{num2}\n{num3}")
+stu_age.extend(new_list)
+num1 = stu_age.pop(0)
+num2 = stu_age.pop(8)
+num3 = stu_age.index(31)
+print(f"{stu_age}\n{num1}\n{num2}\n{num3}")
