@@ -73,10 +73,14 @@ len（列表）
 
 """元组"""
 # 定义元组
-t1 = (1, "yongheng", 2)
-print(f"t1元组的内容是{t1}，类型是{type(t1)}")
+# t1 = (1, "yongheng", 2)
+# print(f"t1元组的内容是{t1}，类型是{type(t1)}")
 # 定义单个元素的元组和空元组
-t2 = ("yongheng", )
-t3 = ()
-t4 = tuple()
-print(f"{t3}{t4}")
+# t2 = ("yongheng", )
+# t3 = ()
+# t4 = tuple()
+# print(f"{t3}{t4}")
+# 下表索引取出元组
+t5 = (1, 2, 3, 4, 5)
+num = t5[1]
+print(f"{num}")
