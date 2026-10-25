@@ -84,12 +84,19 @@ len（列表）
 # t5 = (1, 2, 3, 4, 5)
 # num = t5[1]
 # print(f"{num}")
-# 元组的操作
-t6 = ("传智教育", "黑马程序员", "黑马程序员", "python")
-# 查找：index
-index = t6.index("python")
-# 统计：count
-num = t6.count("黑马程序员")
-# len()函数统计元组数量
-num2 = len(t6)
-print(f"{index}{num}{num2}")
+# # 元组的操作
+# t6 = ("传智教育", "黑马程序员", "黑马程序员", "python")
+# # 查找：index
+# index = t6.index("python")
+# # 统计：count
+# num = t6.count("黑马程序员")
+# # len()函数统计元组数量
+# num2 = len(t6)
+# print(f"{index}{num}{num2}")
+# 元组的遍历
+# while 循环
+index = 0
+t7 = (1, 2, 3, 4, 5, 6)
+while index < len(t7):
+    print(f"元组的元素有{t7[index]}")
+    index += 1
