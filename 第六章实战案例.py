@@ -57,10 +57,25 @@
 3. 删除学生爱好中的football
 4．增加爱好：coding到爱好list内
 """
-t1 = ('周杰伦', 11, [ 'football', 'music'])
-index = t1.index(11)
-name = t1[0]
-del t1[2][1]
-# t1[2].append("coding")
-t1[2].insert(0,"coding")
-print(f"{index}{name}{t1}")
+# t1 = ('周杰伦', 11, [ 'football', 'music'])
+# index = t1.index(11)
+# name = t1[0]
+# del t1[2][1]
+# # t1[2].append("coding")
+# t1[2].insert(0,"coding")
+# print(f"{index}{name}{t1}")
+
+"""
+给定一个字符串："itheima itcast boxuegu'
+•统计字符串内有多少个"it"字符
+• 将字符串内的空格，全部替换为字符：|
+• 并按照”进行字符串分割，得到列表
+字符串itheima itcast boxvegu中有：2个it字符
+字符串itheima itcast boxuegu，被替换空格后，结果：itheimalitcast|boxuegu
+字符串itheimalitcast|boxuegu，按照|分隔后，得到：［'itheima'，'itcast'，'boxvegu'］
+"""
+str = "itheima itcast buxuegu"
+num = str.count("it")
+new_str = str.replace(" ","|")
+new_str_list = new_str.split("|")
+print(f"{num}\n{new_str}\n{new_str_list}")
