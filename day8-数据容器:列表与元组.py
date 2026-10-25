@@ -1,3 +1,5 @@
+"""列表"""
+
 # 基本语法：
 # 字面量 [元素一，元素二，...]
 # 定义变量 变量名称 = [元素一，元素二，...]
@@ -65,6 +67,13 @@ len（列表）
 #     print(f"{element}")
 #     index += 1
 
-mylist = [1, 2, 3, 4, 5]
-for element in mylist:
-    print(f"{element}")
+# mylist = [1, 2, 3, 4, 5]
+# for element in mylist:
+#     print(f"{element}")
+
+"""元组"""
+# 定义元组
+t1 = (1, "yongheng", 2)
+print(f"t1元组的内容是{t1}，类型是{type(t1)}")
+# 定义单个元素的元组
+t2 = ("yongheng", )
