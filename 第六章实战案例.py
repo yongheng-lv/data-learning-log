@@ -47,3 +47,19 @@
 #     if element % 2 == 0:
 #         list2.append(element)
 # print(f"{list2}")
+"""
+定义一个元组，内容是：
+（'周杰轮，11，［ football，'music'］），记录的是一个学生的信息（姓名、年
+龄、爱好）
+请通过元组的功能（方法），对其进行
+1． 查询其年龄所在的下标位置
+2. 查询学生的姓名
+3. 删除学生爱好中的football
+4．增加爱好：coding到爱好list内
+"""
+t1 = ('周杰伦', 11, [ 'football', 'music'])
+index = t1.index(11)
+name = t1[0]
+del t1[2][1]
+# t1.insert(2,"coding")
+print(f"{index}{name}{t1}")
