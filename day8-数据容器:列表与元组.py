@@ -95,8 +95,12 @@ len（列表）
 # print(f"{index}{num}{num2}")
 # 元组的遍历
 # while 循环
-index = 0
+# index = 0
+# t7 = (1, 2, 3, 4, 5, 6)
+# while index < len(t7):
+#     print(f"元组的元素有{t7[index]}")
+#     index += 1
+# for 循环
 t7 = (1, 2, 3, 4, 5, 6)
-while index < len(t7):
-    print(f"元组的元素有{t7[index]}")
-    index += 1
+for element in t7:
+    print(f"t7的元素有{element}")
