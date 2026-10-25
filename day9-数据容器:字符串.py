@@ -15,8 +15,12 @@
 """
 # 字符串的遍历
 # while遍历
-my_str = "lv yong heng"
-index = 0
-while index < len(my_str):
-    print(f"字符串遍历后是{my_str[index]}")
-    index += 1
+# my_str = "lv yong heng"
+# index = 0
+# while index < len(my_str):
+#     print(f"字符串遍历后是{my_str[index]}")
+#     index += 1
+# for循环
+my_str = "吕永恒"
+for element in my_str:
+    print(element)
