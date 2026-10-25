@@ -81,6 +81,15 @@ len（列表）
 # t4 = tuple()
 # print(f"{t3}{t4}")
 # 下表索引取出元组
-t5 = (1, 2, 3, 4, 5)
-num = t5[1]
-print(f"{num}")
+# t5 = (1, 2, 3, 4, 5)
+# num = t5[1]
+# print(f"{num}")
+# 元组的操作
+t6 = ("传智教育", "黑马程序员", "黑马程序员", "python")
+# 查找：index
+index = t6.index("python")
+# 统计：count
+num = t6.count("黑马程序员")
+# len()函数统计元组数量
+num2 = len(t6)
+print(f"{index}{num}{num2}")
