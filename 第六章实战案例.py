@@ -61,5 +61,6 @@ t1 = ('周杰伦', 11, [ 'football', 'music'])
 index = t1.index(11)
 name = t1[0]
 del t1[2][1]
-# t1.insert(2,"coding")
+# t1[2].append("coding")
+t1[2].insert(0,"coding")
 print(f"{index}{name}{t1}")
