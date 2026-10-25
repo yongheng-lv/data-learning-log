@@ -71,7 +71,7 @@ len（列表）
 # for element in mylist:
 #     print(f"{element}")
 
-"""元组"""
+"""元组""" # (元组不可修改)
 # 定义元组
 # t1 = (1, "yongheng", 2)
 # print(f"t1元组的内容是{t1}，类型是{type(t1)}")
@@ -101,6 +101,10 @@ len（列表）
 #     print(f"元组的元素有{t7[index]}")
 #     index += 1
 # for 循环
-t7 = (1, 2, 3, 4, 5, 6)
-for element in t7:
-    print(f"t7的元素有{element}")
+# t7 = (1, 2, 3, 4, 5, 6)
+# for element in t7:
+#     print(f"t7的元素有{element}")
+# 元组不可修改，但元组里的列表可修改
+# t8 = ([1, 2,],[3, 4])
+# t8[1][1] = "yongheng"
+# print(f"t8的内容是{t8}")
