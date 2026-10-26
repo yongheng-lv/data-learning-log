@@ -100,5 +100,6 @@ my_list=［'黑马程序员'，传智播客，'黑马程序员'，'传智播客'
 """
 set1 = set()
 my_list = ['黑马程序员','传智播客','黑马程序员','传智播客','itheima', 'itcast', 'itheima', 'itcast','best']
-for set1 in my_list:
-    print(f"{set(set1)}")
+for element in my_list:
+    set1.add(element)
+print(set1)
