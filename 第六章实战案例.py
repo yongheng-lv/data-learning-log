@@ -98,9 +98,7 @@ my_list=［'黑马程序员'，传智播客，'黑马程序员'，'传智播客'
 • 在for循环中将列表的元素添加至集合
 • 最终得到元素去重后的集合对象，并打印输出
 """
-set1 = ()
+set1 = set()
 my_list = ['黑马程序员','传智播客','黑马程序员','传智播客','itheima', 'itcast', 'itheima', 'itcast','best']
 for set1 in my_list:
     print(set1)
-    set2 = set1.add(set1)
-    print(set2)
