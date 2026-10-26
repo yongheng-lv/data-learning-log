@@ -84,6 +84,23 @@
 有字符串："万过薪月，灵序穆马黑来，nohtyP学"
 • 请使用学过的任何方式，得到"黑马程序员"
 """
-my_str = "万过薪月，员序程马黑来，nohtyP学"
-my_str2 = my_str[::-1][9:14:1]
-print(f"result = {my_str2}")
+# my_str = "万过薪月，员序程马黑来，nohtyP学"
+# my_str2 = my_str[::-1][9:14:1]
+# print(f"result = {my_str2}")
+
+"""
+有如下列表对象：
+my_list=［'黑马程序员'，传智播客，'黑马程序员'，'传智播客'，'itheima'， "itcast， 'itheima'， "itcast，
+'best'］
+请：
+• 定义一个空集合
+• 通过for循环遍历列表
+• 在for循环中将列表的元素添加至集合
+• 最终得到元素去重后的集合对象，并打印输出
+"""
+set1 = ()
+my_list = ['黑马程序员','传智播客','黑马程序员','传智播客','itheima', 'itcast', 'itheima', 'itcast','best']
+for set1 in my_list:
+    print(set1)
+    set2 = set1.add(set1)
+    print(set2)
