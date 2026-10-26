@@ -74,8 +74,16 @@
 字符串itheima itcast boxuegu，被替换空格后，结果：itheimalitcast|boxuegu
 字符串itheimalitcast|boxuegu，按照|分隔后，得到：［'itheima'，'itcast'，'boxvegu'］
 """
-str = "itheima itcast buxuegu"
-num = str.count("it")
-new_str = str.replace(" ","|")
-new_str_list = new_str.split("|")
-print(f"{num}\n{new_str}\n{new_str_list}")
+# str = "itheima itcast buxuegu"
+# num = str.count("it")
+# new_str = str.replace(" ","|")
+# new_str_list = new_str.split("|")
+# print(f"{num}\n{new_str}\n{new_str_list}")
+
+"""
+有字符串："万过薪月，灵序穆马黑来，nohtyP学"
+• 请使用学过的任何方式，得到"黑马程序员"
+"""
+my_str = "万过薪月，员序程马黑来，nohtyP学"
+my_str2 = my_str[::-1][9:14:1]
+print(f"result = {my_str2}")
