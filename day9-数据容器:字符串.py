@@ -1,4 +1,4 @@
-"""字符串"""
+"""字符串"""# (不可修改)
 # 方法
 """
 编号  操作                        说明
@@ -21,6 +21,6 @@
 #     print(f"字符串遍历后是{my_str[index]}")
 #     index += 1
 # for循环
-my_str = "吕永恒"
-for element in my_str:
-    print(element)
+# my_str = "吕永恒"
+# for element in my_str:
+#     print(element)
