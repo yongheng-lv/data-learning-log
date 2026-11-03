@@ -14,12 +14,12 @@ print(f"移除指定元素后set2为:{set2}")
 # 从集合中随机取出一个元素
 num = set2.pop()
 print(f"在set里随机取出的数为{num}")
-# 将集合清空
-set2.clear()
-print(f"清空后，set2为{set2}")
 # 得到一个新集合，内含2个集合的差集原有的2个集合内容不变
 set4 = set2.difference(set3)
 print(f"set2和set3的差集为{set4}")
 # 在集合2中，删除集合3中存在的元素集合2被修改，集合3不变
 set2.difference_update(set3)
 print(f"在set2中删除set3中的元素后，set2为{set2}")
+# 将集合清空
+set2.clear()
+print(f"清空后，set2为{set2}")
