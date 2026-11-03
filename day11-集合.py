@@ -11,4 +11,8 @@ print(f"添加新元素后set2为: {set2}")
 set2.remove(1)
 print(f"移除指定元素后set2为:{set2}")
 # 从集合中随机取出一个元素
+num = set2.pop()
+print(f"在set里随机取出的数为{num}")
 # 将集合清空
+set2.clear()
+print(f"清空后，set2为{set2}")
