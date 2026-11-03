@@ -29,3 +29,7 @@ print(f"set2的元素数量为{new_num}")
 # 将集合清空
 set2.clear()
 print(f"清空后，set2为{set2}")
+# for循环遍历，由于集合无下表索引，所以不能使用while循环遍历
+new_set = {"lv yong heng", 19, "python", 19}
+for element in new_set:
+    print(element)
