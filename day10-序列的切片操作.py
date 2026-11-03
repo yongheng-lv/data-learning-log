@@ -16,3 +16,7 @@ print(f"字符串切片结果是{new_str}")
 # 元组[起始下标:结束下标:步长]
 new_tuple = mt_tuple[0:2:1]
 print(f"元组切片结果是{new_tuple}")
+
+new_str2 = "万过薪月，员序程马黑来,nohtyP学"
+new_str3 = new_str2[9:4:-1]
+print(f"新字符串切片结果是{new_str3}")
