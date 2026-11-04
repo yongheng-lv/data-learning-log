@@ -40,7 +40,7 @@
 #     print("未成年禁止进入")
 
 # 函数说明文档
-# def func （x, y）：
+# def func(x,y)：
 # 函数说明
 # ：param x：
 # 形参X的说明

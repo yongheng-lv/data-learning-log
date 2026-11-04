@@ -1,5 +1,5 @@
 """
-while循环及嵌套、for循环及嵌套、range语句、continue和brake
+while循环及嵌套、for循环及嵌套、range语句、continue和break
 """
 
 # 基础语法
