@@ -17,3 +17,6 @@ def user_info3(name,age = 19,gender = "男"): # 默认参数，gender = "男"为
 user_info3("恒", 20) # 位置传参，若不传入最后一个参数，使用默认参数
 user_info3("恒", 20, "女") # 位置传参，使用传入的参数
 user_info3(age = 20, name = "恒", gender = "女") # 关键字传参，使用传入的参数
+def user_info(*args):
+    print(f"{args}") # 可变参数，传入的参数会被打包成一个元组
+user_info("Tom", 18)
