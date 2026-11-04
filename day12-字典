@@ -25,6 +25,10 @@ my_dict2["周杰伦轮"] = 33 # 修改键值对
 print(f"添加和修改键值对后，my_dict2的值为{my_dict2}")
 score2 = my_dict2.pop("林俊节") # 删除键值对
 print(f"删除的键值对为{score2},删除后my_dict2的值为{my_dict2}")
+# my_dict2.clear() # 清空字典
+# print(f"清空后my_dict2的值为{my_dict2}")
+len(my_dict2) # 得到字典的长度
+print(f"字典的长度为{len(my_dict2)}")
 # ⚠️以下为遗忘
 keys = my_dict2.keys() # 通过keys()方法获取字典的所有键
 for key in keys:
