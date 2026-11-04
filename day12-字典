@@ -29,4 +29,5 @@ print(f"删除的键值对为{score2},删除后my_dict2的值为{my_dict2}")
 keys = my_dict2.keys() # 通过keys()方法获取字典的所有键
 for key in keys:
     print(f"字典里所有的键有{keys}")
-    print(f"键为{key}的值为{my_dict2.keys()}")
+    print(f"键为的值为{my_dict2.keys()}")
+    
