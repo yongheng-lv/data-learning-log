@@ -24,8 +24,12 @@ def user_info(**kawarges):
     print(f"{kawarges}") # 可变关键字参数，传入的参数会被打包成一个字典
 user_info(name = "Tom", age = 18, gender = "male")
 
-def add(computer):
-    result = computer(1,2)
+def add(compute): # 函数作为参数传入
+    result = compute(1,2)
     print(result)
-def computer(x, y):
-    result = x+ y
+def compute(x, y):
+    return x + y
+def func(compute):
+    result = compute(1,2)
+    print(result)
+func(lambda x, y: x + y)
