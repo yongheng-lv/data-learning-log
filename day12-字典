@@ -17,3 +17,11 @@ my_dict2 = {"lvyongheng":{"gender":"male",
             }# 字典嵌套
 my_dict2["lvyongheng"]["age"] # 查找嵌套字典中键所对应的值
 print(f"通过嵌套字典查找键lvyongheng所对应的age值为{my_dict2['lvyongheng']['age']}" )
+my_dict2 = {"周杰轮":99, "林俊节":88, "张学油":77}
+score = my_dict2["张学油"] # 查找键所对应的值
+print(f"通过字典查找键张学油所对应的值为{score}")
+my_dict2["张信哲"] = 66 # 添加键值对
+my_dict2["周杰伦轮"] = 33 # 修改键值对
+print(f"添加和修改键值对后，my_dict2的值为{my_dict2}")
+score2 = my_dict2.pop("林俊节") # 删除键值对
+print(f"删除的键值对为{score2},删除后my_dict2的值为{my_dict2}")
