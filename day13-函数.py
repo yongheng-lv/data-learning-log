@@ -24,6 +24,8 @@ def user_info(**kawarges):
     print(f"{kawarges}") # 可变关键字参数，传入的参数会被打包成一个字典
 user_info(name = "Tom", age = 18, gender = "male")
 
-def user_info4(*args, **kwargs):
-    print(f"{args}, {kwargs}") # 可变参数和可变关键字参数同时使用
-user_info4("Tom", 18, name = "Tom", age = 18, gender = "male")
+def add(computer):
+    result = computer(1,2)
+    print(result)
+def computer(x, y):
+    result = x+ y
