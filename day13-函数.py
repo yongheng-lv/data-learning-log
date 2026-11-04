@@ -20,3 +20,6 @@ user_info3(age = 20, name = "恒", gender = "女") # 关键字传参，使用传
 def user_info(*args):
     print(f"{args}") # 可变参数，传入的参数会被打包成一个元组
 user_info("Tom", 18)
+def user_info(**kawarges):
+    print(f"{kawarges}") # 可变关键字参数，传入的参数会被打包成一个字典
+user_info(name = "Tom", age = 18, gender = "male")
