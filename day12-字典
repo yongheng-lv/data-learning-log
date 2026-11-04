@@ -4,3 +4,5 @@
 # my_dict = {}  / my_dict = dict() # 定义空字典
 my_dict1 = {"name":"lv yong heng" , "age":19, "learning":"python"} # 定义字典
 print(f"输出字典my_dict的值为{my_dict1},类型是{type(my_dict1)}")
+my_dict1["name"]
+print(f"通过字典查找键name所对应的值为{my_dict1["name"]}")
