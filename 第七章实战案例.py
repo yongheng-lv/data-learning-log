@@ -23,5 +23,7 @@ print(f"itheima 共有{num}个")
 同时，将文件内标记为测试的数据行丢弃
 """
 f = open("/Users/wulixiwa/Documents/bill.txt", "r", encoding = "UTF-8")
+d = open("/Users/wulixiwa/Documents/bill.txt.bak", "w", encoding = "UTF-8")
 info = f.read()
-print(info)
+d.write(info)
+print("win")
