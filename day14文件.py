@@ -14,9 +14,11 @@ print(f"打开的测试文件是{f}，类型是{type(f)}")
 # line2 = f.readline()
 # line3 = f.readline()
 # print(f"{line1}{line2}{line3}")
-for line in f:
-    print(f"每一行数是{line}") # 读取余下的行
+# for line in f:
+#     print(f"每一行数是{line}") # 读取余下的行
 
 f.close() # 关闭文件，不关闭无法在访达对原文件进行修改
-time.Any(5000) # 睡眠5000秒，不等同关闭
-with open() as f:
+# time.sleep(5000) # 睡眠5000秒，不等同关闭
+with open("/Users/wulixiwa/Documents/test.txt", "r", encoding = "UTF-8") as f:
+    for i in f:
+        print(f"每一行内容是{i}")
