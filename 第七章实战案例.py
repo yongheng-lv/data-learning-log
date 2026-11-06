@@ -9,8 +9,10 @@ zhengzhou bigdata itheima
 """
 f = open("/Users/wulixiwa/Documents/test.txt", "r", encoding = "UTF-8")
 list1 = f.readlines()
-for i in list1:
-    num = 0
-    if i == "itheima":
+list1 = list1.strip()
+words = list1.split(" ")
+num = 0
+for word in words:
+    if word == "itheima":
         num += 1
         print(f"itheima 共有{num}个")
