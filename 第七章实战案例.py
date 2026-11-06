@@ -23,15 +23,14 @@ zhengzhou bigdata itheima
 同时，将文件内标记为测试的数据行丢弃
 """
 f = open("/Users/wulixiwa/Documents/bill.txt", "r", encoding = "UTF-8")
-d = open("/Users/wulixiwa/Documents/bill.txt.bak", "w", encoding = "UTF-8")
-d.write(f.read())
+d = open("/Users/wulixiwa/Documents/bill2.txt", "w", encoding = "UTF-8")
 for words in f:
     words = words.strip()
     words = words.split()
     for word in words:
         if word == "测试":
-            f.write(words)
+            d.write(words)
         else:
             continue
-        f.close()
+        d.close()
 print("win")
