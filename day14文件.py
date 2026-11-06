@@ -6,5 +6,5 @@ f = open("/Users/wulixiwa/Documents/test.txt", "r", encoding="UTF-8") # 打开�
 print(f"打开的测试文件是{f}，类型是{type(f)}")
 context = f.read(4) # 读取文件
 print(f"读取的文件内容是{context}")
-line = f.readline()
+line = f.readline() # 括号内不填，默认一行
 print(f"{line}")
