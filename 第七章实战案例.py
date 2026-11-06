@@ -8,11 +8,11 @@ zhengzhou bigdata itheima
 通过文件读取操作，读取此文件，统计itheima单词出现的次数
 """
 f = open("/Users/wulixiwa/Documents/test.txt", "r", encoding = "UTF-8")
-list1 = f.readlines()
-list1 = list1.strip()
-words = list1.split(" ")
 num = 0
-for word in words:
-    if word == "itheima":
-        num += 1
-        print(f"itheima 共有{num}个")
+for list1 in f:
+    list1 = list1.strip()
+    words = list1.split(" ")
+    for word in words:
+        if word == "itheima":
+            num += 1
+print(f"itheima 共有{num}个")
