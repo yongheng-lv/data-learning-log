@@ -32,5 +32,5 @@ for words in f:
             continue
         else:
             d.write(words)
-            d.close()
+d.close()
 print("win")
