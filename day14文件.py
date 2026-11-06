@@ -2,5 +2,5 @@
 文件
 """
 # 编码：一种集合规则，记录了内容和二进制间相互转化的逻辑，编码有许多，最常用的是UFT-8；编码能将各种语言翻译成0和1，让计算机读取并保存；反之，让计算机把0和1翻译成各种语言也可以
-f = open("/User/Desktop/test.txt", "r", encoding="UFT-8")
+f = open("/User/wulixiwa/文稿/test.txt", "r", encoding="UFT-8")
 print(f"读取的黑马测试文件是{f}")
