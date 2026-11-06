@@ -9,9 +9,9 @@ zhengzhou bigdata itheima
 """
 # f = open("/Users/wulixiwa/Documents/test.txt", "r", encoding = "UTF-8")
 # num = 0
-# for list1 in f: # 输出字符串
-#     list1 = list1.strip()
-#     words = list1.split(" ")
+# for line in f: # 输出字符串
+#     line = line.strip()
+#     words = line.split(" ")
 #     for word in words:
 #         if word == "itheima":
 #             num += 1
@@ -24,13 +24,10 @@ zhengzhou bigdata itheima
 """
 f = open("/Users/wulixiwa/Documents/bill.txt", "r", encoding = "UTF-8")
 d = open("/Users/wulixiwa/Documents/bill2.txt", "w", encoding = "UTF-8")
-for info in f:
-    words = info.strip()
-    words = words.split()
-    for word in words:
-        if word == "测试":
-            continue
-        else:
-            d.write(words)
-            d.close()
-print("win")
+for line in f:
+    if "测试" in line:
+        continue
+    else:
+        d.write(line)
+d.close()
+print("备份完成")
