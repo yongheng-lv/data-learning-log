@@ -24,13 +24,13 @@ zhengzhou bigdata itheima
 """
 f = open("/Users/wulixiwa/Documents/bill.txt", "r", encoding = "UTF-8")
 d = open("/Users/wulixiwa/Documents/bill2.txt", "w", encoding = "UTF-8")
-for words in f:
-    words = words.strip()
+for info in f:
+    words = info.strip()
     words = words.split()
     for word in words:
         if word == "测试":
             continue
         else:
             d.write(words)
-d.close()
+            d.close()
 print("win")
