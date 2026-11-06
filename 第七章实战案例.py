@@ -29,8 +29,8 @@ for words in f:
     words = words.split()
     for word in words:
         if word == "测试":
-            d.write(words)
-        else:
             continue
-        d.close()
+        else:
+            d.write(words)
+            d.close()
 print("win")
