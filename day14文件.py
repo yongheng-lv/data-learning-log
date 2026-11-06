@@ -24,4 +24,6 @@ with open("/Users/wulixiwa/Documents/test.txt", "r", encoding = "UTF-8") as f: #
     for i in f:
         print(f"每一行内容是{i}")
 
-f = open("test.txt", "w", encoding = "UTF-8")
+f = open("/Users/wulixiwa/Documents/write.txt", "w", encoding = "UTF-8")
+f.write("hello world")
+f.flush()
