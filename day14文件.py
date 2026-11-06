@@ -24,8 +24,13 @@
 #     for i in f:
 #         print(f"每一行内容是{i}")
 
-f = open("/Users/wulixiwa/Documents/write.txt", "w", encoding = "UTF-8")
-f.write("hello world") # 覆盖原文件内容
-# f.flush() # 刷新后内容会更新
-f.close() # 关闭文件，内置刷新功能
-print("成功")
+# f = open("/Users/wulixiwa/Documents/write.txt", "w", encoding = "UTF-8")
+# f.write("hello world") # 若文件存在则覆盖原文件内容，不存在则添加文件
+# # f.flush() # 刷新后内容会更新
+# f.close() # 关闭文件，内置刷新功能
+# print("成功")
+
+f = open("/Users/wulixiwa/Documents/write.txt", "a", encoding = "UTF-8")
+f.write("\n") # 换行
+f.write("你好，世界") # 在write文件后追加“你好世界”
+f.close()
