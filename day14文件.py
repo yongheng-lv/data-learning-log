@@ -5,7 +5,7 @@
 f = open("/Users/wulixiwa/Documents/test.txt", "r", encoding="UTF-8") # 打开文件
 print(f"打开的测试文件是{f}，类型是{type(f)}")
 
-context = f.read() # 读取文件，四个字节
+# context = f.read() # 读取文件，四个字节
 # context2 = f.read(4) # 读取余下全部字节
 # print(f"读取四个字节的文件内容是{context}，读取的全部内容是{context2}") # 从第一次读取的文件内容后继续读取
 # lines = f.readlines() # 括号内不填，默认读取余下的全部行，封装在列表中
@@ -16,4 +16,4 @@ context = f.read() # 读取文件，四个字节
 # print(f"{line1}{line2}{line3}")
 
 for line in f:
-    print(f"{line}")
+    print(f"每一行数是{line}")
