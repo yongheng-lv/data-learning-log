@@ -29,7 +29,8 @@ def add(compute): # 函数作为参数传入
     print(result)
 def compute(x, y):
     return x + y
-def func(compute):
+
+def func(compute): 
     result = compute(1,2)
     print(result)
-func(lambda x, y: x + y)
+func(lambda x, y: x + y) # 匿名函数的调用
