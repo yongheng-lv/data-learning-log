@@ -14,6 +14,7 @@ print(f"打开的测试文件是{f}，类型是{type(f)}")
 # line2 = f.readline()
 # line3 = f.readline()
 # print(f"{line1}{line2}{line3}")
-
 for line in f:
-    print(f"每一行数是{line}")
+    print(f"每一行数是{line}") # 读取余下的行
+
+f.close() # 关闭文件
