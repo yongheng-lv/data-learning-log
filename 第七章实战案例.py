@@ -25,9 +25,7 @@ zhengzhou bigdata itheima
 f = open("/Users/wulixiwa/Documents/bill.txt", "r", encoding = "UTF-8")
 d = open("/Users/wulixiwa/Documents/bill2.txt", "w", encoding = "UTF-8")
 for line in f:
-    line = line.strip()
-    line.split(",")
-    if line.split(",")[4] == "测试":
+    if "测试" in line:
         continue
     else:
         d.write(line)
