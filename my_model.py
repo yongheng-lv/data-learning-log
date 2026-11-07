@@ -1,7 +1,7 @@
 def test_a(a, b):
     print(a + b)
-test_a(1, 2)
+if __name__ == "__main__": # 不会调用以下函数
+    test_a(1, 2)
 
 def test_b(a, b):
     print(a - b)
-test_b(2, 1)
