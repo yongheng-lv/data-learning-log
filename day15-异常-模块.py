@@ -28,3 +28,8 @@ def main(): # 异常具有传递性
     except Exception as e:
         print(f"异常传递下来了，类型是{e}")
 main()
+
+import time # 倒入time模块，能够使用其内部的功能
+print("hello")
+time.sleep(5) # 使用time模块内部的sleep方法
+print("nihao")
