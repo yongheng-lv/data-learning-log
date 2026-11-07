@@ -39,7 +39,12 @@ print("ni")
 sleep(2)
 print("hao")
 
-from time import *
+from time import * # 导入全部功能
 print(3)
 sleep(5)
 print(4)
+
+from time import sleep as sl # 将sleep命名为sl
+print(33)
+sl(5)
+print(55)
