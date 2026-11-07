@@ -38,3 +38,8 @@ from time import sleep # 导入指定模块
 print("ni")
 sleep(2)
 print("hao")
+
+from time import *
+print(3)
+sleep(5)
+print(4)
