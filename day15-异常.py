@@ -11,6 +11,12 @@ try:
 except ZeroDivisionError as e: # 捕获指定类型的异常 
     print(f"太好了，捕获到异常了,是{e}类型的")
 
+    try:
+        num = 1 / 0
+        print(name)
+    except (NameError,ZeroDivisionError):
+        print("太好了，成功捕获到了异常")
+
 def func1():
     print(name)
 def func2():
