@@ -31,5 +31,10 @@ main()
 
 import time # 倒入time模块，能够使用其内部的功能
 print("hello")
-time.sleep(5) # 使用time模块内部的sleep方法
+time.sleep(5) # 使用time模块内部的sleep方法，睡眠5秒
 print("nihao")
+
+from time import sleep # 导入指定模块
+print("ni")
+sleep(2)
+print("hao")
