@@ -14,7 +14,7 @@ except ZeroDivisionError as e: # 捕获指定类型的异常
     try:
         num = 1 / 0
         print(name)
-    except (NameError,ZeroDivisionError):
+    except (NameError,ZeroDivisionError): # 捕获指定的多个异常
         print("太好了，成功捕获到了异常")
 
 def func1():
@@ -22,7 +22,7 @@ def func1():
 def func2():
     func1()
     print("yes")
-def main():
+def main(): # 异常具有传递性
     try:
         func2()
     except Exception as e:
