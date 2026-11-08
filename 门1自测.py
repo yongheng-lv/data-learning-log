@@ -16,7 +16,9 @@
 # ============================================================
 
 # 在下面写代码：
-
+for i in range(1,101):
+    if i % 3 == 0:
+        print(i)
 
 
 
@@ -27,6 +29,7 @@
 nums = [23, 45, 12, 67, 34, 89, 5]
 
 # 在下面写代码：
+for i in nums:
 
 
 
@@ -38,3 +41,8 @@ nums = [23, 45, 12, 67, 34, 89, 5]
 s = "banana and apple are amazing"
 
 # 在下面写代码：
+count = 0
+for i in s:
+    if i == "a":
+        count += 1
+print(count)
