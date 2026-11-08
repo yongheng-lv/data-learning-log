@@ -1,5 +1,5 @@
 def str_reverse(s):
-    s.reverse()
+    s = s[::-1]
     print(s)
 def substr(s, x, y):
     s.split()
