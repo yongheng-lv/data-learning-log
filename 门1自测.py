@@ -29,8 +29,12 @@ for i in range(1,101):
 nums = [23, 45, 12, 67, 34, 89, 5]
 
 # 在下面写代码：
-# for i in nums:
-#     if i > 
+biggest = nums[0]
+for i in nums:
+    if i > biggest:
+        biggiest = i
+print(biggest)
+
 
 
 
