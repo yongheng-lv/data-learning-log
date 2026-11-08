@@ -11,3 +11,6 @@ from my_package.my_model2 import func2
 from my_package.my_model1 import func1
 func1()
 func2()
+
+from my_package import *
+my_model1.func1()
