@@ -12,5 +12,5 @@ from my_package.my_model1 import func1
 func1()
 func2()
 
-from my_package import *
+from my_package import * # 只导入all函数里的功能
 my_model1.func1()
