@@ -1,8 +1,8 @@
 def str_reverse(s):
     s = s[::-1]
-    print(s)
+    return s
 def substr(s, x, y):
     s = s[x:y]
-    print(s)
-str_reverse("hello")
-substr("我叫吕永恒", 1, 3)
+    return s
+if __name__ == "__main__":
+    print(str_reverse("我是吕永恒"))
