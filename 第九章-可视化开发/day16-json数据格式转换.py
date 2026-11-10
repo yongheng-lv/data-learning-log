@@ -7,7 +7,7 @@ json_str = json.dumps(list1, ensure_ascii = False) # 将列表用json转化成�
 print(f"经过json格式转化后，数据类型是{type(json_str)}，内容是{json_str}")
 
 dict1 = {"name":"恒", "age":19, "gender":"male"}
-json_str1 = json.dumps(dict1) # 将字典用json转化成字符串
+json_str1 = json.dumps(dict1, ensure_ascii = False) # 将字典用json转化成字符串
 print(f"经过json格式转化后，数据类型是{type(json_str1)}，内容是{json_str1}")
 
 s = '[{"name":"美", "age":19}, {"name":"sun", "age":24}]'
