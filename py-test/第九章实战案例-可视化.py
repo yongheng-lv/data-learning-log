@@ -1,6 +1,7 @@
 """
-2022年美国新冠确诊人数
+可视化案例
 """
+# 折线可视化
 import json
 from pyecharts.charts import Line
 from pyecharts.options import TitleOpts,LabelOpts
@@ -36,3 +37,9 @@ line.render()
 f_us.close()
 f_jp.close()
 f_in.close()
+
+# 地图可视化
+from pyecharts.charts import Map
+map = Map()
+map.add("测试地图", "US")
+map.render()
