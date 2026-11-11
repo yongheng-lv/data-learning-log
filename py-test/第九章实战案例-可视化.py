@@ -3,7 +3,7 @@
 """
 import json
 from pyecharts.charts import Line
-f_us = open("/Users/wulixiwa/Download/美国.txt", "r", encoding = "UTF-8")
+f_us = open("/Users/wulixiwa/dsh实验室/黑马python/美国.txt", "r", encoding = "UTF-8")
 us_data = f_us.read()
 us_data = us_data.replace("jsonp_1629344292311_69436(", " ") # 去掉不合理的json头
 us_data = us_data[:-2] # 去掉json不合理的尾
