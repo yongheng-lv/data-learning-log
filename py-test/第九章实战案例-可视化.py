@@ -23,9 +23,9 @@ us_trend = us_dict["data"][0]["trend"]
 jp_trend = jp_dict["data"][0]["trend"]
 in_trend = in_dict["data"][0]["trend"]
 us_x_data = us_trend["updateDate"][:314] # x轴数据
-us_y_data = us_trend["list"][:314] # y轴数据
-jp_y_data = jp_trend["list"][:314]
-in_y_data = in_trend["list"][:314]
+us_y_data = us_trend["list"][0]["data"][:314] # y轴数据，[0]是"确诊"的数字列表
+jp_y_data = jp_trend["list"][0]["data"][:314]
+in_y_data = in_trend["list"][0]["data"][:314]
 line = Line()
 line.add_xaxis(us_x_data)
 line.add_yaxis("美国确诊人数", us_y_data, label_opts=LabelOpts(is_show = False))
