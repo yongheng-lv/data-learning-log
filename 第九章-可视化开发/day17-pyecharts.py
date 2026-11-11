@@ -18,6 +18,8 @@ pyecharts入门
 # 地图可视化
 from pyecharts.charts import Map
 from pyecharts.options import VisualMapOpts
+from pyecharts.globals import CurrentConfig
+CurrentConfig.ONLINE_HOST = "assets/"   # 用本地资源，不连外网CDN（官网证书过期了）
 map = Map()
 data = [
     ("北京", 9),
