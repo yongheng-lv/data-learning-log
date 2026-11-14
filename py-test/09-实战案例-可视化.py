@@ -46,3 +46,16 @@ map = Map()
 # add(系列名, 数据, 地图类型)：数据是 (地区名, 数值) 组成的列表
 map.add("测试地图", [("California", 100), ("Texas", 50), ("New York", 80)], "美国")
 map.render("美国地图.html")   # 和折线图分开存
+
+# 读取、关闭文件
+f = open("疫情.txt", "r", encoding="UTF-8")
+data = f.read()
+f.close()
+dict_data = json.loads(data) # json转dict
+provence_data_list = dict_data["areaTree"][0]["children"]
+data_list = []
+for provence_data in provence_data_list:
+    provence_name = provence_data["name"]
+    provence_confirm = provence_data["total"]["confirm"]
+    data_list.append((provence_name, provence_confirm))
+print(dict_data)
