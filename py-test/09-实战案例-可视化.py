@@ -35,7 +35,7 @@ line.add_yaxis("美国确诊人数", us_y_data, label_opts=LabelOpts(is_show = F
 line.add_yaxis("日本确诊人数", jp_y_data, label_opts=LabelOpts(is_show = False))
 line.add_yaxis("印度确诊人数", in_y_data, label_opts=LabelOpts(is_show = False))
 line.set_global_opts(title_opts = TitleOpts(title = "2020年美日印新冠感染人数对比折线图", pos_right = "center", pos_bottom = "1%"))
-line.render("折线图.html")   # 起个名字，免得被下面的地图覆盖
+line.render("/Users/wulixiwa/py-learning/py-test/折线图.html")   # 起个名字，免得被下面的地图覆盖
 f_us.close()
 f_jp.close()
 f_in.close()
@@ -45,7 +45,7 @@ from pyecharts.charts import Map
 map = Map()
 # add(系列名, 数据, 地图类型)：数据是 (地区名, 数值) 组成的列表
 map.add("测试地图", [("California", 100), ("Texas", 50), ("New York", 80)], "美国")
-map.render("美国地图.html")   # 和折线图分开存
+map.render("/Users/wulixiwa/py-learning/py-test/美国地图.html")   # 和折线图分开存
 
 
 
@@ -104,4 +104,4 @@ map.set_global_opts(
         ]
     )
 )
-map.render("全国疫情地图.html")
+map.render("/Users/wulixiwa/py-learning/py-test/全国疫情地图.html")
