@@ -60,8 +60,30 @@ f.close()
 dict_data = json.loads(data) # json转dict
 provence_data_list = dict_data["areaTree"][0]["children"]
 data_list = []
+
+# 数据里的省名是简称（如"北京"），但地图文件里是全称（如"北京市"）
+# 名字对不上，地图就标不上颜色，所以写个小函数转换一下
+def change_name(name):
+    if name in ["北京", "上海", "天津", "重庆"]:
+        return name + "市"                    # 四个直辖市
+    if name == "内蒙古":
+        return "内蒙古自治区"
+    if name == "广西":
+        return "广西壮族自治区"
+    if name == "西藏":
+        return "西藏自治区"
+    if name == "宁夏":
+        return "宁夏回族自治区"
+    if name == "新疆":
+        return "新疆维吾尔自治区"
+    if name == "台湾":
+        return "台湾省"
+    if name in ["香港", "澳门"]:
+        return name + "特别行政区"
+    return name + "省"                        # 剩下的都是省
+
 for provence_data in provence_data_list:
-    provence_name = provence_data["name"]
+    provence_name = change_name(provence_data["name"])   # 简称转全称
     provence_confirm = provence_data["total"]["confirm"]
     data_list.append((provence_name, provence_confirm))
 print(data_list)
@@ -75,10 +97,10 @@ map.set_global_opts(
         pieces=[
             {"min":1, "max":99, "label":"1~99人", "color":"#CCFFFF"},
             {"min":100, "max":999, "label":"100~999人", "color":"#FFFF99"},
-            {"min":1000,"max": 4999,"lable":"1000~4999人","color":"#FF9966"},
-            {"min":5000,"max":9999,"lable":"5000~99999人","color":"#FF6666"},
-            {"min":10000,"max":99999,"lable":"10000~99999人","color":"#CC3333"},
-            {"min":100000,"lable":"100000+","color":"#990033"},
+            {"min":1000,"max": 4999,"label":"1000~4999人","color":"#FF9966"},
+            {"min":5000,"max":9999,"label":"5000~9999人","color":"#FF6666"},
+            {"min":10000,"max":99999,"label":"10000~99999人","color":"#CC3333"},
+            {"min":100000,"label":"100000+","color":"#990033"},
         ]
     )
 )
