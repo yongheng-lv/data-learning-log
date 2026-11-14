@@ -47,6 +47,12 @@ map = Map()
 map.add("测试地图", [("California", 100), ("Texas", 50), ("New York", 80)], "美国")
 map.render("美国地图.html")   # 和折线图分开存
 
+
+
+# 导入包
+import json
+from pyecharts.charts import Map
+from pyecharts.options import *
 # 读取、关闭文件
 f = open("/Users/wulixiwa/dsh实验室/黑马程序python/疫情.txt", "r", encoding="UTF-8")
 data = f.read()
@@ -59,3 +65,21 @@ for provence_data in provence_data_list:
     provence_confirm = provence_data["total"]["confirm"]
     data_list.append((provence_name, provence_confirm))
 print(data_list)
+map = Map()
+map.add("各省确诊人数", data_list, "china")
+map.set_global_opts(
+    title_opts=TitleOpts(title="全国疫情地图"),
+    visualmap_opts=VisualMapOpts(
+        is_show=True,
+        is_piecewise=True,
+        pieces=[
+            {"min":1, "max":99, "label":"1~99人", "color":"#CCFFFF"},
+            {"min":100, "max":999, "label":"100~999人", "color":"#FFFF99"},
+            {"min":1000,"max": 4999,"lable":"1000~4999人","color":"#FF9966"},
+            {"min":5000,"max":9999,"lable":"5000~99999人","color":"#FF6666"},
+            {"min":10000,"max":99999,"lable":"10000~99999人","color":"#CC3333"},
+            {"min":100000,"lable":"100000+","color":"#990033"},
+        ]
+    )
+)
+map.render("全国疫情地图.html")
