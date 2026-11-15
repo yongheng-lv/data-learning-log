@@ -117,6 +117,8 @@ data_dict = json.loads(data)
 citis_data_list = data_dict["areaTree"][0]["children"][11]["children"]
 data_list = []
 for city_data in citis_data_list:
+    if city_data["name"] == "境外输入":   # "境外输入"不是城市，地图上没有，跳过
+        continue
     city_name = city_data["name"]+"市"
     city_confirm = city_data["total"]["confirm"]
     data_list.append((city_name, city_confirm))
