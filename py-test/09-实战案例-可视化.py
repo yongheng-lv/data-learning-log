@@ -137,4 +137,4 @@ map.set_global_opts(
         ]
     )
 )
-map.render("山东省疫情地图.html")
+map.render("/Users/wulixiwa/py-learning/py-test/山东省疫情地图.html")
