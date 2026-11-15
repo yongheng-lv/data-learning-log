@@ -119,7 +119,7 @@ data_list = []
 for city_data in citis_data_list:
     city_name = city_data["name"]+"市"
     city_confirm = city_data["total"]["confirm"]
-data_list.append(("city_name", "city_confirm"))
+    data_list.append((city_name, city_confirm))
 map = Map()
 map.add("山东城市分布", data_list, "山东")
 map.set_global_opts(
