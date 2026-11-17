@@ -19,4 +19,5 @@ for line in data_lines:
     except:
         data_dict[year] = []
         data_dict[year].append([country, gdp])
-print(data_dict)
+sorted_year_list = sorted(data_dict.keys())
+print(sorted_year_list)
