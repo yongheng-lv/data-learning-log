@@ -1,6 +1,8 @@
 # 柱状图
 from pyecharts.charts import Bar
+from pyecharts.options import LabelOpts
 bar = Bar()
 bar.add_xaxis(["中国", "美国", "英国"])
-bar.add_yaxis("GDP", [30, 20, 10])
+bar.add_yaxis("GDP", [30, 20, 10], label_opts=LabelOpts(position = "right"))
+bar.reversal_axis()
 bar.render("/Users/wulixiwa/py-learning/py-learn/基础柱状图.html")
