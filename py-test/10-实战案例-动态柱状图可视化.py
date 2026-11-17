@@ -3,6 +3,7 @@ GDP柱状图开发
 """
 from pyecharts.charts import Bar, Timeline
 from pyecharts.options import *
+from pyecharts.globals import ThemeType
 # 读取文件
 f = open("/Users/wulixiwa/dsh实验室/黑马程序python/动态柱状图数据/1960-2019全球GDP数据.csv", "r", encoding="GBK")
 data_lines = f.readlines()
@@ -21,7 +22,7 @@ for line in data_lines:
     except:
         data_dict[year] = []
         data_dict[year].append([country, gdp])
-timeline = Timeline()
+timeline = Timeline({"theme":ThemeType.LIGHT})
 # 年份由低到高排序
 sorted_year_list = sorted(data_dict.keys())
 for year in sorted_year_list:
@@ -35,12 +36,17 @@ for year in sorted_year_list:
         y_data.append(country_gdp[1] / 100000000)       # y轴添加gdp
     # 构建柱状图
     bar = Bar()
+    x_data.reverse()
+    y_data.reverse()
     bar.add_xaxis(x_data)
     bar.add_yaxis("GDP(亿)", y_data, label_opts=LabelOpts(position="right"))
     bar.reversal_axis()
+    bar.set_global_opts(
+        title_opts=TitleOpts(title=f"{year}年全球前8GDP数据")
+        )
     timeline.add(bar,str(year))
-    timeline.add_schema(play_interval=100,
-                    is_timeline_show=True,
+    timeline.add_schema(play_interval=1000,
+                    is_timeline_show=False,
                     is_auto_play=True,
                     is_loop_play=False
                     )
