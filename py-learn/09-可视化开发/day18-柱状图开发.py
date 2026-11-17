@@ -10,6 +10,7 @@ bar.render("/Users/wulixiwa/py-learning/py-learn/基础柱状图.html")
 # 基础时间线柱状图
 from pyecharts.charts import Bar, Timeline
 from pyecharts.options import LabelOpts
+from pyecharts.globals import ThemeType
 
 bar1 = Bar()
 bar1.add_xaxis(["中国", "美国", "英国"])
@@ -23,9 +24,16 @@ bar3 = Bar()
 bar3.add_xaxis(["中国", "美国", "英国"])
 bar3.add_yaxis("GDP", [50, 30, 20], label_opts=LabelOpts(position = "right"))
 bar3.reversal_axis()
-# 构建时间线
-timeline = Timeline()
+# 构建时间线对象
+timeline = Timeline({"theme" : ThemeType.LIGHT})
+# 在时间线内添加柱状图
 timeline.add(bar1, "1")
 timeline.add(bar2, "2")
 timeline.add(bar3, "3")
+timeline.add_schema(
+    play_interval=1000,
+    is_timeline_show=True,
+    is_auto_play=True,
+    is_loop_play=True
+)
 timeline.render("/Users/wulixiwa/py-learning/py-learn/基础时间柱状图.html")
