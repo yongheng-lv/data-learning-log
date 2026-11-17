@@ -33,13 +33,13 @@ for year in sorted_year_list:
     for country_gdp in year_data:
         x_data.append(country_gdp[0])       # x轴添加国家
         y_data.append(country_gdp[1] / 100000000)       # y轴添加gdp
-# 构建柱状图
-bar = Bar()
-bar.add_xaxis(x_data)
-bar.add_yaxis("GDP(亿)", y_data, label_opts=LabelOpts(position="right"))
-bar.reversal_axis()
-timeline.add(bar,str(year))
-timeline.add_schema(play_interval=1000,
+    # 构建柱状图
+    bar = Bar()
+    bar.add_xaxis(x_data)
+    bar.add_yaxis("GDP(亿)", y_data, label_opts=LabelOpts(position="right"))
+    bar.reversal_axis()
+    timeline.add(bar,str(year))
+    timeline.add_schema(play_interval=100,
                     is_timeline_show=True,
                     is_auto_play=True,
                     is_loop_play=False
