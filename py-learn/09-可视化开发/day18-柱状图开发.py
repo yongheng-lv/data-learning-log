@@ -34,9 +34,9 @@ timeline.add(bar2, "2")
 timeline.add(bar3, "3")
 timeline.add_schema(
     play_interval=1000,
-    is_timeline_show=True,
+    is_timeline_show=False,
     is_auto_play=True,
-    is_loop_play=True
+    is_loop_play=False
 )
 timeline.render("/Users/wulixiwa/py-learning/py-learn/基础时间柱状图.html")
 
