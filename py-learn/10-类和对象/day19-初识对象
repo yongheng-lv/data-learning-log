@@ -42,8 +42,11 @@ class Clock:
     price = None
 
     def ring(self):
-        import winsound
-        winsound.Beep(1000, 3000)
+        # import winsound
+        # winsound.Beep(1000, 3000)
+        import subprocess
+        subprocess.run(["afplay", "/System/Library/Sounds/Ping.aiff"])
+
 clock1 = Clock()
 clock1.name = "001"
 clock1.price = 9.99
