@@ -1,1 +1,29 @@
 """
+初识对象
+"""
+# 设计类
+class Student:
+    gender = None
+    nationality = None
+    native_place = None
+    age = None
+    name = None
+# 创建对象
+stu_1 = Student()
+# 对象属性赋值
+stu_1.name = "王俊卡"
+stu_1.gender = "男"
+stu_1.nationality = "CN"
+stu_1.native_place = "山东省"
+stu_1.age = 19
+
+# 成员属性和成员方法
+class Student:
+    name = None
+    def say_hi1(self):
+        print(f"大家好，我是{self.name}")
+    def say_hi2(self, msg):
+        print(f"大家好，我是{self.name}，{msg}")
+stu1 = Student()
+stu1.name = "蔡徐坤"
+stu1.say_hi1()
