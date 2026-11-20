@@ -14,13 +14,13 @@
 请输入学生姓名：
 """
 class Student:
-    for i in range(1, 11):
-        # name = input("请输入姓名：")
-        # age = input("请输入年龄：")
-        # addr = input("请输入地址：")
-        def __init__(self, name, age, addr):
-            self.name = name
-            self.age = age
-            self.addr = addr
+        for i in range(1, 11):
+            name = input("请输入姓名：")
+            age = input("请输入年龄：")
+            addr = input("请输入地址：")
+            def __init__(self, name, age, addr):
+                self.name = input("请输入姓名：")
+                self.age = input("请输入年龄：")
+                self.addr = input("请输入住址")
 stu = Student("蔡徐坤", 21, "山东省")
 print(f"{stu.name}{stu.age}{stu.addr}")
