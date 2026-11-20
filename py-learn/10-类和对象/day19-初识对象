@@ -57,3 +57,4 @@ clock2 = Clock()
 clock2.name = "002"
 clock2.price = 99.99
 print(f"闹钟的编号是{clock2.name}，闹钟的价格是{clock2.price}")
+clock2.ring()
