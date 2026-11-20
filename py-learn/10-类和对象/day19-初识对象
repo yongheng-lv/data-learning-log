@@ -58,3 +58,14 @@ clock2.name = "002"
 clock2.price = 99.99
 print(f"闹钟的编号是{clock2.name}，闹钟的价格是{clock2.price}")
 clock2.ring()
+
+class Student:
+    def __init__(self, name, age, tel):
+        self.name = name
+        self.age = age
+        self.tel = tel
+        print("Student创建了一个类对象，且自动执行")
+stu = Student("蔡徐坤", 21, "12233334444")
+print(stu.name)
+print(stu.age)
+print(stu.tel)
