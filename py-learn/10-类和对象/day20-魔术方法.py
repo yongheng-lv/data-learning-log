@@ -26,13 +26,13 @@ print(stu1 == stu2)
 
 # 封装:公开的成员方法访问私有成员方法
 class Phone:    # 定义一个类，内含私有成员变量和私有成员方法
-    __current_votage = 1    # 私有成员变量 无法直接访问
+    __current_votage = 0.2    # 私有成员变量 无法直接访问
 
     def __keep_single_core(self):   #定义一个私有成员方法
-        print("让CPU单核模式运行")
+        print("CPU以单核模式运行")
 
     def call_by_5G(self): # 定义一个公开成员方法，调用私有成员变量和方法
-        if self.__current_single_core >= 1:
+        if self.__current_votage >= 1:
             print("5G通话已开启")
         else:
             self.__keep_single_core()
