@@ -33,6 +33,7 @@ class Phone:    # 定义一个类，内含私有成员变量和私有成员方�
         if self.__current_single_core >= 1:
             print("5G通话已开启")
         else:
+            self.__keep_single_core()
             print("电量不足，无法使用5G，以开启单核模式进行省电")
 phone = Phone()
 phone.call_by_5G
